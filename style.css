@@ -1,0 +1,209 @@
+/* 
+ Theme Name: levy52
+ Theme URI: 
+ Author: Radosław Lewicki - levy52
+ Author URI: https://github.com/levy52
+ Description: Simple wordpress template built from scratch
+Version: 1.0 
+ */
+
+body {
+    max-width: 2560px;
+    background-color: #000000;
+}
+
+ /* Center menu in mobile */
+@media (min-width: 768px) {
+.center-menu {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+ }
+}
+
+.socialmedia img {
+    margin: 5px;
+}
+
+.post-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.custom-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000000;
+  }
+  .navbar .navbar-brand {
+    color: #0ac7f6;
+  }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #6210bd;
+  }
+  .navbar .navbar-text {
+    color: #0ac7f6;
+  }
+  .navbar .navbar-text a {
+    color: #6210bd;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #6210bd; 
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #0ac7f6;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #6210bd;
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #6210bd;
+    background-color: #ff0000;
+  }
+  .navbar .navbar-toggler {
+    border-color: #ff0000;
+  }
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    background-color: #ff0000;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    color: #0ac7f6;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #0ac7f6;
+  }
+  .navbar .navbar-link {
+    color: #0ac7f6;
+  }
+  .navbar .navbar-link:hover {
+    color: #6210bd;
+  }
+  
+  @media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #0ac7f6;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #6210bd;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #6210bd;
+      background-color: #ff0000;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #0ac7f6;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #6210bd;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #6210bd;
+      background-color: #ff0000;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #0ac7f6;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #6210bd;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #6210bd;
+      background-color: #ff0000;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #0ac7f6;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #6210bd;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #6210bd;
+      background-color: #ff0000;
+    }
+  }
+  
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #0ac7f6;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #6210bd;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #6210bd;
+    background-color: #ff0000;
+  }
+  
+  /* Styles button Load More Posts*/
+  .levy52_loadmore{
+	background-color: #853434;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	letter-spacing:1px;
+	cursor:pointer;
+	text-transform: uppercase;
+	padding: 10px 0;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;  
+}
+.levy52_loadmore:hover{
+	background-color: #767676;
+	color: #fff;
+}
+
+.pagination {
+    display:none;
+   }
+
+/* Styles topbutton */
+.topbutton {
+    height:25px;
+    width:25px;
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    Z-index:0;
+    background-image: url("assets/images/arrow-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:none;
+}
