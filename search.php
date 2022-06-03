@@ -3,8 +3,11 @@
 <?php
 get_header();
 ?>
+<div class="container">
+<div class="row">
+    <div class="col-12 col-md-8 col-xxl-10">
 
-<?php 
+    <?php 
 global $post;
 $args = array( 's' => esc_html( get_search_query( false ) ), 'posts_per_page' => 32 );
 $myposts = get_posts( $args );
@@ -14,6 +17,12 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
        </div>
 <?php endforeach;
  wp_reset_postdata();?>
+            
+
+        </div>
+        <?php get_sidebar('sidebar'); ?>
+    </div>
+</div>
 
 <?php
 get_footer();
