@@ -8,14 +8,23 @@ if (have_posts()) :
                 <div class="post_article_img"><?php if (has_post_thumbnail()) {
                                                     echo the_post_thumbnail('thumbnail', array('class' => 'post-cover'));
                                                 } else {
-                                                    echo '<img src="https://crocoder.pl/wp-content/uploads/2018/12/wordpress-personalizacja-motywu-logo-1.jpg" width="100%" height="100%" object-fit="ratio" aspect-ratio="16/9"/>';
+                                                    echo '<img src="' .get_template_directory_uri() . '/assets/images/stop.jpg" width="100%" height="100%" object-fit="ratio" aspect-ratio="16/9"/>';
                                                 } ?>
                 </div>
 
                 <ul class="post_article_info">
-                    <li>Dodano: <?php the_date(); ?></li>
+                    <li><?php the_date(); ?></li>
                     <li><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>"><?php echo the_author_meta('display_name'); ?></a></li>
-                    <li><?php comments_popup_link('Brak komentarzy', '1 komentarz', '% Comments'); ?></li>
+                    <li><?php
+                        $categories = get_the_category();
+                        $separator = ' ';
+                        $output = '';
+                        if (!empty($categories)) {
+                            foreach ($categories as $category) {
+                                $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $category->name)) . '">' . esc_html($category->name) . '</a>' . $separator;
+                            }
+                            echo trim($output, $separator);
+                        } ?> </li>
                 </ul>
             </div>
             <div class="text_post"><?php the_excerpt(); ?></div>

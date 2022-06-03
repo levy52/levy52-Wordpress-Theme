@@ -6,14 +6,15 @@ function levy52_scripts()
   wp_enqueue_style('levy52_style', get_stylesheet_uri());
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', false, null);
+  wp_enqueue_script('searchbox', get_template_directory_uri() . '/js/searchbox.js', array( 'jquery' ));
 }
 
 function levy52_setup()
 {
   // Własne logo w motywie
   add_theme_support('custom-logo', array(
-    'height'      => 200, // wysokość logo
-    'width'       => 100, // szerokość logo
+    'height'      => 100, // wysokość logo
+    'width'       => 200, // szerokość logo
     'flex-height' => false, // czy wysokość ma być elastyczna
     'flex-width'  => true, // czy szerokość ma być elastyczna
   )); //własny nagłówek w motywie
@@ -117,7 +118,7 @@ function levy52_my_load_more_scripts() {
 	global $wp_query; 
  
 	// register our main script but do not enqueue it yet
-	wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/myloadmore.js', array('jquery') );
+	wp_register_script( 'my_loadmore', get_stylesheet_directory_uri() . '/js/myloadmore.js', array('jquery') );
  
 	// now the most interesting part
 	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP

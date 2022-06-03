@@ -24,9 +24,9 @@ get_header();
                 <img src="<?php echo get_template_directory_uri(); ?> /assets/images/stop.jpg" class="img-fluid" alt=""/>
             </div>
         </div>
-    </div><!-- .section-inner -->
+    </div>
 
-</main><!-- #site-content -->
+</main>
 
 <?php
 get_footer();

@@ -20,13 +20,13 @@
         </div>
     <?php endif; ?>
 
-    <nav class="navbar navbar-dark bg-black navbar-expand-md text-secondary">
+    <nav class="navbar navbar-dark navbar-expand-md text-secondary border-bottom rich-black">
         <div class="container-fluid">
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,10 +43,17 @@
                     'walker'            => 'WP_Bootstrap_Navwalker',
                 ));
                 ?>
-                <form role="search" method="get" id="searchform" class="searchform d-flex ms-auto col-md-3" action="<?php bloginfo("url"); ?>">
-                    <input class="form-control" type="search" value="" name="s" id="s" placeholder="Szukaj" aria-label="Search">
-                    <button class="btn btn-danger" type="submit" id="searchsubmit" value="Szukaj">Szukaj</button>
-                </form>
             </div>
         </div>
+        <div class="search-icon ms-auto"><a href="#search"><img src="<?php echo get_template_directory_uri() ?> /assets/images/search-icon.png"/></a></div>
     </nav>
+    <div id="search">
+        <button type="button" class="close">×</button>
+        <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo("url"); ?>">
+            <h3>Get Set...</h3>
+            <input type="search" value="" name="s" id="s" placeholder="type keyword(s) here" aria-label="Search">
+            <button type="submit" class="btn button-color" id="searchsubmit">Go for Search</button>
+        </form>
+    </div>
+
+    

@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-black">
+<footer class="text-center text-lg-start rich-black">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
     <div class="me-5 d-none d-sm-block">
@@ -9,14 +9,14 @@
   <!-- Section: Social media -->
 
   <!-- Section: Links  -->
-  <section class="">
+  <section class="rich-black">
     <div class="container text-center text-md-start mt-5">
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 text-secondary">
             Company name
           </h6>
           <p>
@@ -29,10 +29,10 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-2">
+          <h6 class="text-uppercase fw-bold mb-2 text-secondary">
             Category
           </h6>
-          <nav class="container navbar navbar-dark bg-black text-secondary navbar-text d-flex justify-content-center justify-content-md-start m-0">
+          <nav class="container navbar navbar-dark d-flex justify-content-center justify-content-md-start m-0 rich-black">
             <?php
             wp_nav_menu(array(
               'theme_location'    => 'footer_category',
@@ -53,11 +53,11 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-2">
+          <h6 class="text-uppercase fw-bold mb-2 text-secondary">
             Menu
           </h6>
 
-          <nav class="container navbar navbar-dark bg-black text-secondary navbar-text d-flex justify-content-center justify-content-md-start m-0">
+          <nav class="container navbar navbar-dark d-flex justify-content-center justify-content-md-start m-0 rich-black">
             <?php
             wp_nav_menu(array(
               'theme_location'    => 'footer',
@@ -78,7 +78,7 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-3">
+          <h6 class="text-uppercase fw-bold mb-3 text-secondary">
             Contact
           </h6>
           <p>New York, NY 10012, US</p>
