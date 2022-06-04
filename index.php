@@ -22,8 +22,8 @@ get_header();
             </div>
         </div>
         <?php get_sidebar('sidebar'); ?>
-    </div> <!-- End Row -->
-</div> <!-- End container -->
+    </div> 
+</div> 
 
 <?php
 get_footer();

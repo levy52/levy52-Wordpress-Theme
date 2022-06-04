@@ -1,28 +1,35 @@
-<meta name="robots" content="noindex">
-
 <?php
 get_header();
 ?>
-<div class="container">
-<div class="row">
-    <div class="col-12 col-md-8 col-xxl-10">
 
-    <?php 
-global $post;
-$args = array( 's' => esc_html( get_search_query( false ) ), 'posts_per_page' => 32 );
-$myposts = get_posts( $args );
-foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-<div class="col-md-12">
-        <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-       </div>
-<?php endforeach;
- wp_reset_postdata();?>
+<div class="container mt-2 mb-4 mt-5 text-color">
+    <div class="row">
+        <div class="col-12 col-md-8 col-xxl-10">
+            <div class="row">
             
+               
+                    <header class="page-header">
+                        <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'my-theme'), get_search_query()); ?></h1>
+                    </header>
 
+                <?php get_template_part('/template-parts/loop', 'index'); ?>
+
+                <?php
+                the_posts_pagination();
+                ?>
+
+                <?php // LOAD MORE BUTTON 
+                global $wp_query;
+                // don't display the button if there are not enough posts
+                if ($wp_query->max_num_pages > 1)
+                    echo '<div class="levy52_loadmore">More posts</div>';
+                ?>
+
+            </div>
         </div>
         <?php get_sidebar('sidebar'); ?>
-    </div>
-</div>
+    </div> 
+</div> 
 
 <?php
 get_footer();
