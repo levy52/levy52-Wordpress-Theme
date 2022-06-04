@@ -21,17 +21,17 @@ if (have_posts()) :
                         $output = '';
                         if (!empty($categories)) {
                             foreach ($categories as $category) {
-                                $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $category->name)) . '">' . esc_html($category->name) . '</a>' . $separator;
+                                $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'levy52'), $category->name)) . '">' . esc_html($category->name) . '</a>' . $separator;
                             }
                             echo trim($output, $separator);
                         } ?> </li>
                 </ul>
             </div>
             <div class="text_post"><?php the_excerpt(); ?></div>
-            <p class="para_more"><a href="<?php the_permalink() ?>" class="btn btn-success">Read more</a></p>
+            <p class="para_more"><a href="<?php the_permalink() ?>" class="btn btn-success"><?php _e( 'Read more', 'levy52' ); ?></a></p>
         </div>
     <?php endwhile; ?>
 
 <?php else : ?>
-    <h5> Nie znaleziono żadnych postów</h5>
+    <?php echo '<h5>' . __('No posts found', 'levy52') . '</h5>'; ?>
 <?php endif; ?>

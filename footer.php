@@ -3,7 +3,7 @@
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
     <div class="me-5 d-none d-sm-block">
-    <div class="socialmedia">Get connected with us on social networks:<?php dynamic_sidebar("socialmedia"); ?></div>
+    <div class="socialmedia"><?php _e( 'Get connected with us on social networks:', 'levy52' ); dynamic_sidebar("socialmedia"); ?></div>
     </div>
   </section>
   <!-- Section: Social media -->
@@ -17,7 +17,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4 text-secondary">
-            Company name
+          <?php _e( 'Company name', 'levy52' ); ?>
           </h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -30,7 +30,7 @@
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-2 text-secondary">
-            Category
+          <?php _e( 'Category', 'levy52' ); ?>
           </h6>
           <nav class="container navbar navbar-dark d-flex justify-content-center justify-content-md-start m-0 rich-black">
             <?php
@@ -54,7 +54,7 @@
         <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-2 text-secondary">
-            Menu
+          <?php _e( 'Menu', 'levy52' ); ?>
           </h6>
 
           <nav class="container navbar navbar-dark d-flex justify-content-center justify-content-md-start m-0 rich-black">
@@ -79,7 +79,7 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-3 text-secondary">
-            Contact
+          <?php _e( 'Contact', 'levy52' ); ?>
           </h6>
           <p>New York, NY 10012, US</p>
           <p>info@example.com</p>

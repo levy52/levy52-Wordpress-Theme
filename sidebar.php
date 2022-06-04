@@ -5,11 +5,11 @@
                     <?php dynamic_sidebar('sidebar'); ?>
                 <?php endif; ?>
                 <li>
-                    <div class="sidebar-border mb-2">Info</div>
-                    <p>A template made from scratch with Bootstrap.</p>
+                    <div class="sidebar-border mb-2"><?php _e( 'Info', 'levy52' ); ?></div>
+                    <?php echo '<p>' . __('A template made from scratch with Bootstrap.', 'levy52') . '</p>'; ?>
                 </li>
                 <li>
-                    <div class="sidebar-border mb-2"> Categories </div>
+                    <div class="sidebar-border mb-2"><?php _e( 'Categories', 'levy52' ); ?></div>
                     <ul>
                         <?php wp_list_categories('title_li='); ?>
                     </ul>

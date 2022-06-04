@@ -9,7 +9,7 @@ get_header();
             
                
                     <header class="page-header">
-                        <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'my-theme'), get_search_query()); ?></h1>
+                        <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'levy52'), get_search_query()); ?></h1>
                     </header>
 
                 <?php get_template_part('/template-parts/loop', 'index'); ?>

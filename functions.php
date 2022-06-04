@@ -11,25 +11,28 @@ function levy52_scripts()
 
 function levy52_setup()
 {
-  // Własne logo w motywie
+  
   add_theme_support('custom-logo', array(
-    'height'      => 100, // wysokość logo
-    'width'       => 200, // szerokość logo
-    'flex-height' => false, // czy wysokość ma być elastyczna
-    'flex-width'  => true, // czy szerokość ma być elastyczna
-  )); //własny nagłówek w motywie
+    'height'      => 100, 
+    'width'       => 200, 
+    'flex-height' => false,
+    'flex-width'  => true,
+  )); 
   add_theme_support('custom-header', array(
-    'default-image'  => get_template_directory_uri() . '/includes/img/default-header-rain.jpg', // domyślne zdjęcie
-    'header-text'    => false, // czy razem z obrazkiem chcemy jakiś tekst
-    'width'          => 2000, // szerokość nagłówka
-    'height'         => 280, // wysokość nagłówka
-    'flex-height'    => true, // czy wysokość może być elastyczna
+    'default-image'  => get_template_directory_uri() . '/includes/img/default-header-rain.jpg',
+    'header-text'    => false,
+    'width'          => 2000,
+    'height'         => 280,
+    'flex-height'    => true,
   ));
 }
 
 add_action('after_setup_theme', 'levy52_setup');
 add_theme_support('post-thumbnails', array('post', 'page'));
 add_action('wp_enqueue_scripts', 'levy52_scripts');
+
+load_theme_textdomain( 'levy52', get_template_directory() . '/languages' );
+
 
 // Bootstrap Navwalker -->
 

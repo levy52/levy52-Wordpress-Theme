@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: levy52\n"
+"POT-Creation-Date: 2022-06-04 20:46+0200\n"
+"PO-Revision-Date: 2022-06-04 20:46+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: functions.php\n"
+
+#: 404.php:11
+msgid "Page not found"
+msgstr "Strona nie znaleziona"
+
+#: 404.php:12
+msgid ""
+"The page you were looking for could not be found. It may have been deleted, "
+"renamed or never existed at all."
+msgstr ""
+"Nie można znaleźć strony, której szukasz. Mogła zostać usunięta, zmieniona "
+"nazwa lub w ogóle nie istniała."
+
+#: 404.php:13
+msgid "Please try to search for something else"
+msgstr "Spróbuj poszukać czegoś innego"
+
+#: 404.php:17
+msgid "Search"
+msgstr "Szukaj"
+
+#: class-wp-bootstrap-navwalker.php:368
+msgid "Add a menu"
+msgstr "Dodaj menu"
+
+#: footer.php:6
+msgid "Get connected with us on social networks:"
+msgstr "Połącz się z nami w sieciach społecznościowych:"
+
+#: footer.php:20
+msgid "Company name"
+msgstr "Nazwa firmy"
+
+#: footer.php:33
+msgid "Category"
+msgstr "Kategorie"
+
+#: footer.php:57
+msgid "Menu"
+msgstr "Menu"
+
+#: footer.php:82
+msgid "Contact"
+msgstr "Kontakt"
+
+#: header.php:53
+msgid "Get set.."
+msgstr "Wyszukaj.."
+
+#: header.php:54
+msgid "type keyword(s) here"
+msgstr "wpisz słowo kluczowe tutaj"
+
+#: header.php:55
+msgid "Go for search"
+msgstr "Szukaj"
+
+#: index.php:19
+msgid "More posts"
+msgstr "Więcej postów"
+
+#: search.php:12
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+#: sidebar.php:8
+msgid "Info"
+msgstr "Info"
+
+#: sidebar.php:9
+msgid "A template made from scratch with Bootstrap."
+msgstr "Szablon wykonany od podstaw za pomocą Bootstrapa."
+
+#: sidebar.php:12
+msgid "Categories"
+msgstr "Kategorie"
+
+#: template-parts/loop.php:24
+#, php-format
+msgid "View all posts in %s"
+msgstr "Zobacz wszystkie posty w %s"
+
+#: template-parts/loop.php:31
+msgid "Read more"
+msgstr "Czytaj więcej"
+
+#: template-parts/loop.php:36
+msgid "No posts found"
+msgstr "Nie znaleziono postów"

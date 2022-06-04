@@ -26,7 +26,7 @@
                 <?php the_custom_logo(); ?>
             </div>
 
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'levy52'); ?>">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,9 +50,9 @@
     <div id="search">
         <button type="button" class="close">×</button>
         <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo("url"); ?>">
-            <h3>Get Set...</h3>
-            <input type="search" value="" name="s" id="s" placeholder="type keyword(s) here" aria-label="Search">
-            <button type="submit" class="btn button-color" id="searchsubmit">Go for Search</button>
+        <?php echo '<h3>' . __('Get set..', 'levy52') . '</h3>'; ?>
+            <input type="search" value="" name="s" id="s" placeholder="<?php _e( 'type keyword(s) here', 'levy52' ); ?>" aria-label="Search">
+            <button type="submit" class="btn button-color" id="searchsubmit"><?php _e('Go for search','levy52') ?> </button>
         </form>
     </div>
 
