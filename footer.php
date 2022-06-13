@@ -19,10 +19,7 @@
           <h6 class="text-uppercase fw-bold mb-4 text-secondary">
           <?php _e( 'Company name', 'levy52' ); ?>
           </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
+          <?php dynamic_sidebar("companyname"); ?>
         </div>
         <!-- Grid column -->
 
@@ -81,10 +78,7 @@
           <h6 class="text-uppercase fw-bold mb-3 text-secondary">
           <?php _e( 'Contact', 'levy52' ); ?>
           </h6>
-          <p>New York, NY 10012, US</p>
-          <p>info@example.com</p>
-          <p>+ 01 234 567 88</p>
-          <p>+ 01 234 567 89</p>
+          <?php dynamic_sidebar("contact"); ?>
         </div>
         <!-- Grid column -->
       </div>

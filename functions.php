@@ -30,7 +30,6 @@ function levy52_setup()
 add_action('after_setup_theme', 'levy52_setup');
 add_theme_support('post-thumbnails', array('post', 'page'));
 add_action('wp_enqueue_scripts', 'levy52_scripts');
-
 load_theme_textdomain( 'levy52', get_template_directory() . '/languages' );
 
 
@@ -87,7 +86,7 @@ register_nav_menus(array(
   'footer_category' => __('Secondary-footer-category', 'footer-category'),
 ));
 
-// Widget social media w stopce
+// Widget social media in footer
 function pm_widgets_init()
 {
   register_sidebar(array(
@@ -114,6 +113,34 @@ function _s_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', '_s_widgets_init' );
+
+// Widget Company name in footer
+function widget_company_name()
+{
+  register_sidebar(array(
+    'name'          => 'Company name',
+    'id'            => 'companyname',
+    'before_widget' => ' ',
+    'after_widget'  => ' ',
+    'before_title'  => ' ',
+    'after_title'   => ' ',
+  ));
+}
+add_action('widgets_init', 'widget_company_name');
+
+// Widget contact in footer
+function widget_contact()
+{
+  register_sidebar(array(
+    'name'          => 'Contact',
+    'id'            => 'contact',
+    'before_widget' => ' ',
+    'after_widget'  => ' ',
+    'before_title'  => ' ',
+    'after_title'   => ' ',
+  ));
+}
+add_action('widgets_init', 'widget_contact');
 
 // Load more posts 
 function levy52_my_load_more_scripts() {

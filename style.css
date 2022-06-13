@@ -75,6 +75,18 @@ a {
   color: #fff;
 }
 
+.levy52_loadmore .load {
+  display: none;
+}
+
+.levy52_loadmore.load .load {
+  display: block;
+}
+
+.levy52_loadmore.load .more {
+  display: none;
+}
+
 .pagination {
   display: none;
 }
@@ -142,7 +154,7 @@ a {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.836);
 
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -219,4 +231,57 @@ a {
   color: #fff;
   font-size: 15vw;
   padding: 0;
+}
+
+.cat-item {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(assets/images/category/mechanic.jpg);
+  background-size: cover;
+  padding: 30px;
+  font-size: xx-large;
+  margin: 10px;
+  text-align: center;
+}
+
+.cat-item:hover {
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 100%), url(assets/images/category/mechanic.jpg);;
+}
+
+.cat-item a {
+  background-color:#45018E;
+  padding: 1px 15px 1px 15px;
+  color: #fff;
+}
+
+.cat-item-14 {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url("assets/images/category/keys.jpg");
+}
+
+.cat-item-14:hover {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%), url("assets/images/category/keys.jpg");
+}
+
+figcaption {
+  text-align: center;
+}
+
+.contact-border {
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  transition: transform .7s ease-in-out;
+  display: inline-block;
+}
+
+
+.contact-border:hover {
+  border: 1px red dashed;
+  transform: rotate(360deg);
+}
+
+
+.social-contact {
+  text-align: center;
 }

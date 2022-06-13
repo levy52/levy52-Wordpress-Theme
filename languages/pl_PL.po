@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: levy52\n"
-"POT-Creation-Date: 2022-06-04 20:46+0200\n"
-"PO-Revision-Date: 2022-06-04 20:46+0200\n"
+"POT-Creation-Date: 2022-06-09 18:41+0200\n"
+"PO-Revision-Date: 2022-06-09 18:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -13,7 +13,7 @@ msgstr ""
 "|| n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: _;__;_e;esc_html__\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html__;esc_html_e;loading\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: functions.php\n"
 
@@ -49,15 +49,15 @@ msgstr "Połącz się z nami w sieciach społecznościowych:"
 msgid "Company name"
 msgstr "Nazwa firmy"
 
-#: footer.php:33
+#: footer.php:30
 msgid "Category"
 msgstr "Kategorie"
 
-#: footer.php:57
+#: footer.php:54
 msgid "Menu"
 msgstr "Menu"
 
-#: footer.php:82
+#: footer.php:79
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -73,7 +73,11 @@ msgstr "wpisz słowo kluczowe tutaj"
 msgid "Go for search"
 msgstr "Szukaj"
 
-#: index.php:19
+#: index.php:20
+msgid "Loading"
+msgstr "Ładowanie"
+
+#: index.php:20
 msgid "More posts"
 msgstr "Więcej postów"
 
@@ -83,14 +87,6 @@ msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
 #: sidebar.php:8
-msgid "Info"
-msgstr "Info"
-
-#: sidebar.php:9
-msgid "A template made from scratch with Bootstrap."
-msgstr "Szablon wykonany od podstaw za pomocą Bootstrapa."
-
-#: sidebar.php:12
 msgid "Categories"
 msgstr "Kategorie"
 
@@ -106,3 +102,9 @@ msgstr "Czytaj więcej"
 #: template-parts/loop.php:36
 msgid "No posts found"
 msgstr "Nie znaleziono postów"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "A template made from scratch with Bootstrap."
+#~ msgstr "Szablon wykonany od podstaw za pomocą Bootstrapa."
