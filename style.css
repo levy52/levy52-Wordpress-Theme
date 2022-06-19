@@ -262,3 +262,20 @@ a {
 figcaption {
   text-align: center;
 }
+
+.comments-area label {
+  display: block;
+}
+
+#comment, #author, #email, #url {
+  width: 50%;
+}
+
+.comment-form-cookies-consent, .comment-form-cookies-consent input{
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+#comments .label {
+  display: block;
+}

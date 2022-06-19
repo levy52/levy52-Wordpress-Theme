@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: levy52\n"
-"POT-Creation-Date: 2022-06-09 18:41+0200\n"
-"PO-Revision-Date: 2022-06-09 18:41+0200\n"
+"POT-Creation-Date: 2022-06-19 20:11+0200\n"
+"PO-Revision-Date: 2022-06-19 20:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _;__;_e;esc_html__;esc_html_e;loading\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -40,6 +40,26 @@ msgstr "Szukaj"
 #: class-wp-bootstrap-navwalker.php:368
 msgid "Add a menu"
 msgstr "Dodaj menu"
+
+#: comments.php:16
+msgid "Comments"
+msgstr "Komentarze"
+
+#: comments.php:33
+msgid "Comments are closed"
+msgstr "Komentowanie zostało wyłączone"
+
+#: comments.php:41
+msgid "Send"
+msgstr "Wyślij"
+
+#: comments.php:43
+msgid "Write a Reply or Comment"
+msgstr "Napisz odpowiedź albo skomentuj"
+
+#: comments.php:47
+msgid "Comment"
+msgstr "Komentarz"
 
 #: footer.php:6
 msgid "Get connected with us on social networks:"
@@ -73,11 +93,11 @@ msgstr "wpisz słowo kluczowe tutaj"
 msgid "Go for search"
 msgstr "Szukaj"
 
-#: index.php:20
+#: index.php:21
 msgid "Loading"
 msgstr "Ładowanie"
 
-#: index.php:20
+#: index.php:21
 msgid "More posts"
 msgstr "Więcej postów"
 
@@ -86,20 +106,23 @@ msgstr "Więcej postów"
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
-#: sidebar.php:8
+#: sidebar.php:7
 msgid "Categories"
 msgstr "Kategorie"
 
-#: template-parts/loop.php:24
+#: template-parts/custom-loop.php:28 template-parts/custom-loop2.php:28
+#: template-parts/loop.php:25
 #, php-format
 msgid "View all posts in %s"
 msgstr "Zobacz wszystkie posty w %s"
 
-#: template-parts/loop.php:31
+#: template-parts/custom-loop.php:35 template-parts/custom-loop2.php:35
+#: template-parts/loop.php:32
 msgid "Read more"
 msgstr "Czytaj więcej"
 
-#: template-parts/loop.php:36
+#: template-parts/custom-loop.php:40 template-parts/custom-loop2.php:40
+#: template-parts/loop.php:37
 msgid "No posts found"
 msgstr "Nie znaleziono postów"
 
