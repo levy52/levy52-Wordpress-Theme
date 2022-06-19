@@ -4,7 +4,7 @@ get_header();
 
 <div class="container mt-2 mb-4 mt-5 text-color">
     <div class="row">
-        <div class="col-12 col-md-8 col-xxl-10">
+        <div class="col-12 col-md-8 col-xxl-9">
             <div class="row">
             
                

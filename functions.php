@@ -176,7 +176,7 @@ function levy52_loadmore_ajax_handler(){
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
  
-	
+
  
 			// look into your theme code how the posts are inserted, but you can use your own HTML of course
 			// do you remember? - my example is adapted for Twenty Seventeen theme
@@ -202,3 +202,4 @@ function my_scripts_method() {
   );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+

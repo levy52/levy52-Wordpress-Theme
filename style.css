@@ -178,6 +178,7 @@ a {
   -ms-transform: translate(0px, 0px) scale(1, 1);
   transform: translate(0px, 0px) scale(1, 1);
   opacity: 1;
+  z-index: 1022;
 }
 
 #search h3 {
@@ -217,14 +218,12 @@ a {
 
 #search .close {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 35px;
+  right: 20px;
   color: #fff;
-  background-color: #888;
-  border-color: #ccc;
+  cursor: pointer;
   opacity: 1;
-  padding: 10px 17px;
-  font-size: 27px;
+  font-size: 30px;
 }
 
 .err404 {
@@ -261,27 +260,5 @@ a {
 }
 
 figcaption {
-  text-align: center;
-}
-
-.contact-border {
-  position: relative;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  padding: 20px;
-  transition: transform .7s ease-in-out;
-  display: inline-block;
-}
-
-
-.contact-border:hover {
-  border: 1px red dashed;
-  transform: rotate(360deg);
-}
-
-
-.social-contact {
   text-align: center;
 }

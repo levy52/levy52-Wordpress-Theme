@@ -1,0 +1,22 @@
+.contact-border {
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    transition: transform .7s ease-in-out;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  
+.contact-border:hover {
+    border: 1px red dashed;
+    transform: rotate(360deg);
+  }
+  
+  
+.social-contact {
+    text-align: center;
+  }

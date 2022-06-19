@@ -1,0 +1,16 @@
+.contact-image {
+    height: 11vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text {
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+}

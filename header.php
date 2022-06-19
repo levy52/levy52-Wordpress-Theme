@@ -48,7 +48,7 @@
         <div class="search-icon ms-auto"><a href="#search"><img src="<?php echo get_template_directory_uri() ?> /assets/images/search-icon.png"/></a></div>
     </nav>
     <div id="search">
-        <button type="button" class="close">×</button>
+        <div class="close">x</div>
         <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo("url"); ?>">
         <?php echo '<h3>' . __('Get set..', 'levy52') . '</h3>'; ?>
             <input type="search" value="" name="s" id="s" placeholder="<?php _e( 'type keyword(s) here', 'levy52' ); ?>" aria-label="Search">
