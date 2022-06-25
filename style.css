@@ -267,11 +267,17 @@ figcaption {
   display: block;
 }
 
-#comment, #author, #email, #url {
-  width: 50%;
+.comment-respond #comment, 
+.comment-respond #author, 
+.comment-respond #email, 
+.comment-respond #url,
+.comment-form .logged-in-as,
+.comment-form .comment-form-cookies-consent {
+  width: 100%;
 }
 
-.comment-form-cookies-consent, .comment-form-cookies-consent input{
+.comment-form-cookies-consent, 
+.comment-form-cookies-consent input{
   display: inline-flex;
   margin-right: 10px;
 }
@@ -279,3 +285,37 @@ figcaption {
 #comments .label {
   display: block;
 }
+
+.comment-form .logged-in-as,
+.comment-form .comment-form-cookies-consent {
+  width: 100%;
+}
+
+.comment-body {
+  position: relative;
+}
+
+.comment-body .reply {
+  position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+.comment-body .comment-reply-link {
+  display: inline-block;
+    padding: 2px 6px;
+    background: #925ef7;
+    color: white;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+.comment-author .says {
+  display: none;
+}
+
+.comments-area, ol .comment-list, li .comment-meta {
+margin-bottom: 20px;
+}
+
