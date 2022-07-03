@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: levy52\n"
-"POT-Creation-Date: 2022-06-19 20:11+0200\n"
-"PO-Revision-Date: 2022-06-19 20:12+0200\n"
+"POT-Creation-Date: 2022-07-03 08:39+0200\n"
+"PO-Revision-Date: 2022-07-03 08:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -41,23 +41,23 @@ msgstr "Szukaj"
 msgid "Add a menu"
 msgstr "Dodaj menu"
 
-#: comments.php:16
+#: comments.php:17
 msgid "Comments"
 msgstr "Komentarze"
 
-#: comments.php:33
+#: comments.php:34
 msgid "Comments are closed"
 msgstr "Komentowanie zostało wyłączone"
 
-#: comments.php:41
+#: comments.php:42
 msgid "Send"
 msgstr "Wyślij"
 
-#: comments.php:43
+#: comments.php:44
 msgid "Write a Reply or Comment"
 msgstr "Napisz odpowiedź albo skomentuj"
 
-#: comments.php:47
+#: comments.php:48
 msgid "Comment"
 msgstr "Komentarz"
 
@@ -93,11 +93,11 @@ msgstr "wpisz słowo kluczowe tutaj"
 msgid "Go for search"
 msgstr "Szukaj"
 
-#: index.php:21
+#: index.php:21 search.php:25
 msgid "Loading"
 msgstr "Ładowanie"
 
-#: index.php:21
+#: index.php:21 search.php:25
 msgid "More posts"
 msgstr "Więcej postów"
 
@@ -106,9 +106,17 @@ msgstr "Więcej postów"
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
-#: sidebar.php:7
+#: sidebar.php:4
 msgid "Categories"
 msgstr "Kategorie"
+
+#: sidebar.php:10
+msgid "Latest Comments"
+msgstr "Najnowsze komentarze"
+
+#: sidebar.php:15
+msgid "Newsletter"
+msgstr ""
 
 #: template-parts/custom-loop.php:28 template-parts/custom-loop2.php:28
 #: template-parts/loop.php:25
@@ -121,10 +129,16 @@ msgstr "Zobacz wszystkie posty w %s"
 msgid "Read more"
 msgstr "Czytaj więcej"
 
-#: template-parts/custom-loop.php:40 template-parts/custom-loop2.php:40
+#: template-parts/custom-loop.php:40 template-parts/custom-loop2.php:41
 #: template-parts/loop.php:37
 msgid "No posts found"
 msgstr "Nie znaleziono postów"
+
+#~ msgid "Previous article"
+#~ msgstr "Poprzedni post"
+
+#~ msgid "Next article"
+#~ msgstr "Następny post"
 
 #~ msgid "Info"
 #~ msgstr "Info"

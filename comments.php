@@ -10,7 +10,7 @@ if (post_password_required()) {
 }
 ?>
 
-<div id="comments" class="col-12 comments-area">
+<div id="comments" class="col-12 pt-4 comments-area">
 
 	<?php
 	if (have_comments()) : ?>
@@ -46,7 +46,7 @@ if (post_password_required()) {
 		'comment_notes_after' => '',
 		// redefine your own textarea (the comment body)
 		'comment_field' => '<span class="comment-form-comment"><label for="comment">' . __('Comment', 'levy52') . '</label><textarea id="comment" name="comment" aria-required="true"></textarea></span>',
-	 	'class_submit' => 'btn btn-primary',
+	 	'class_submit' => '',
 	); ?>
 
 	<?php comment_form($comments_args);

@@ -1,11 +1,11 @@
 <?php
-$blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'publish', 'category_name' => 'warsztat', 'posts_per_page' => 4));
+$blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'publish', 'posts_per_page' => 2));
 ?>
 
 <div class="row">
     <?php if ($blog_posts->have_posts()) : ?>
         <?php while ($blog_posts->have_posts()) : $blog_posts->the_post(); ?>
-            <div class="post_article col-md-3">
+            <div class="post_article col-md-6">
                 <div class="post_article_content">
                     <h1 class="post_article_title fs-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                     <div class="post_article_img"><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
