@@ -405,6 +405,7 @@ li .comment-meta {
 .one-time .slick-dots {
   position: relative;
 }
+
 .one-time .slick-prev {
   left: 0;
 }
@@ -448,7 +449,7 @@ li .comment-meta {
 }
 
 .wpb-posts-nav a {
-  display: grid;
+  display: flex;
   grid-gap: 20px;
   align-items: center;
 }
@@ -464,14 +465,13 @@ li .comment-meta {
   vertical-align: middle;
 }
 
-.wpb-posts-nav > div:nth-child(1) a {
+.wpb-posts-nav>div:nth-child(1) a {
   grid-template-columns: 100px 1fr;
   text-align: left;
 }
 
-.wpb-posts-nav > div:nth-child(2) a {
-  grid-template-columns: 1fr 100px;
-  text-align: right;
+.wpb-posts-nav>div:nth-child(2) a {
+  display: flex;
 }
 
 .wpb-posts-nav__thumbnail {

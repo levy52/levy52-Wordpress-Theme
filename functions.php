@@ -236,42 +236,42 @@ function wpb_posts_nav()
 
   if ($next_post || $prev_post) : ?>
 
-    <div class="wpb-posts-nav">
-      <div>
+    <div class="row wpb-posts-nav">
+      <div class="col-12 col-lg-6 mb-4 mt-4">
         <?php if (!empty($prev_post)) : ?>
           <a href="<?php echo get_permalink($prev_post); ?>">
             <div>
               <div class="wpb-posts-nav__thumbnail wpb-posts-nav__prev">
-                <?php echo get_the_post_thumbnail($prev_post, [100, 100]); ?>
+                <?php echo get_the_post_thumbnail($prev_post, [80, 80]); ?>
               </div>
             </div>
             <div>
               <strong>
                 <?php _e('Previous article', 'levy52') ?>
               </strong>
-              <h4><?php echo get_the_title($prev_post); ?></h4>
+              <h6><?php echo get_the_title($prev_post); ?></h6>
             </div>
           </a>
         <?php endif; ?>
       </div>
-      <div>
+      <div class="col-12 col-lg-6 d-flex flex-nowrap justify-content-lg-end">
         <?php if (!empty($next_post)) : ?>
           <a href="<?php echo get_permalink($next_post); ?>">
-            <div>
+            <div class="order-2 order-lg-1">
               <strong>
                 <?php _e('Next article', 'levy52') ?>
               </strong>
-              <h4><?php echo get_the_title($next_post); ?></h4>
+              <h6><?php echo get_the_title($next_post); ?></h6>
             </div>
-            <div>
+            <div class="order-1 order-lg-2">
               <div class="wpb-posts-nav__thumbnail wpb-posts-nav__next">
-                <?php echo get_the_post_thumbnail($next_post, [100, 100]); ?>
+                <?php echo get_the_post_thumbnail($next_post, [80, 80]); ?>
               </div>
             </div>
           </a>
         <?php endif; ?>
       </div>
-    </div> <!-- .wpb-posts-nav -->
+    </div>
 
 <?php endif;
 }

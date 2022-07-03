@@ -1,33 +1,25 @@
-<!-- Footer -->
 <footer class="text-center text-lg-start rich-black">
-  <!-- Section: Social media -->
+  
   <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
     <div class="me-5 d-none d-sm-block">
-    <div class="socialmedia"><?php _e( 'Get connected with us on social networks:', 'levy52' ); dynamic_sidebar("socialmedia"); ?></div>
+      <div class="socialmedia"><?php _e('Get connected with us on social networks:', 'levy52');
+                                dynamic_sidebar("socialmedia"); ?></div>
     </div>
   </section>
-  <!-- Section: Social media -->
 
-  <!-- Section: Links  -->
   <section class="rich-black">
     <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
       <div class="row mt-3">
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4 text-secondary">
-          <?php _e( 'Company name', 'levy52' ); ?>
+            <?php _e('Company name', 'levy52'); ?>
           </h6>
           <?php dynamic_sidebar("companyname"); ?>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-2 text-secondary">
-          <?php _e( 'Category', 'levy52' ); ?>
+            <?php _e('Category', 'levy52'); ?>
           </h6>
           <nav class="container navbar navbar-dark d-flex justify-content-center justify-content-md-start m-0 rich-black">
             <?php
@@ -45,13 +37,10 @@
 
           </nav>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-2 text-secondary">
-          <?php _e( 'Menu', 'levy52' ); ?>
+            <?php _e('Menu', 'levy52'); ?>
           </h6>
 
           <nav class="container navbar navbar-dark d-flex justify-content-center justify-content-md-start m-0 rich-black">
@@ -70,33 +59,25 @@
 
           </nav>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-3 text-secondary">
-          <?php _e( 'Contact', 'levy52' ); ?>
+            <?php _e('Contact', 'levy52'); ?>
           </h6>
           <?php dynamic_sidebar("contact"); ?>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
   </section>
-  <!-- Section: Links  -->
- 
-  <!-- Copyright -->
+
+
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2022 Copyright:
     <a class="text-reset fw-bold" href="https://github.com/levy52">levy52 Theme</a>
   </div>
-  <!-- Copyright -->
-  
 
 </footer>
-<!-- Footer -->
+
 <a href="#" class="topbutton"></a>
 <?php wp_footer(); ?>
 </body>
