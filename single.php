@@ -13,6 +13,9 @@ get_header();
                 endif;
             endwhile;
             ?>
+            <div class="col-12 mt-3">
+                <?php wpb_posts_nav(); ?>
+            </div>
         </div>
         <?php get_sidebar('sidebar'); ?>
     </div>

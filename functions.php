@@ -227,3 +227,51 @@ function wpbeginner_remove_comment_url($arg)
   return $arg;
 }
 add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
+
+//Prev-Next Post with thumbnail
+function wpb_posts_nav()
+{
+  $next_post = get_next_post();
+  $prev_post = get_previous_post();
+
+  if ($next_post || $prev_post) : ?>
+
+    <div class="wpb-posts-nav">
+      <div>
+        <?php if (!empty($prev_post)) : ?>
+          <a href="<?php echo get_permalink($prev_post); ?>">
+            <div>
+              <div class="wpb-posts-nav__thumbnail wpb-posts-nav__prev">
+                <?php echo get_the_post_thumbnail($prev_post, [100, 100]); ?>
+              </div>
+            </div>
+            <div>
+              <strong>
+                <?php _e('Previous article', 'levy52') ?>
+              </strong>
+              <h4><?php echo get_the_title($prev_post); ?></h4>
+            </div>
+          </a>
+        <?php endif; ?>
+      </div>
+      <div>
+        <?php if (!empty($next_post)) : ?>
+          <a href="<?php echo get_permalink($next_post); ?>">
+            <div>
+              <strong>
+                <?php _e('Next article', 'levy52') ?>
+              </strong>
+              <h4><?php echo get_the_title($next_post); ?></h4>
+            </div>
+            <div>
+              <div class="wpb-posts-nav__thumbnail wpb-posts-nav__next">
+                <?php echo get_the_post_thumbnail($next_post, [100, 100]); ?>
+              </div>
+            </div>
+          </a>
+        <?php endif; ?>
+      </div>
+    </div> <!-- .wpb-posts-nav -->
+
+<?php endif;
+}

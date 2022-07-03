@@ -441,3 +441,44 @@ li .comment-meta {
 .mc4wp-form-basic input[type=checkbox] {
   cursor: pointer;
 }
+
+.wpb-posts-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wpb-posts-nav a {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.wpb-posts-nav h4,
+.wpb-posts-nav strong {
+  margin: 0;
+}
+
+.wpb-posts-nav a svg {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.wpb-posts-nav > div:nth-child(1) a {
+  grid-template-columns: 100px 1fr;
+  text-align: left;
+}
+
+.wpb-posts-nav > div:nth-child(2) a {
+  grid-template-columns: 1fr 100px;
+  text-align: right;
+}
+
+.wpb-posts-nav__thumbnail {
+  display: block;
+  margin: 0;
+}
+
+.wpb-posts-nav__thumbnail img {
+  border-radius: 10px;
+}

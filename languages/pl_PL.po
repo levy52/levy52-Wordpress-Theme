@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: levy52\n"
-"POT-Creation-Date: 2022-07-03 08:39+0200\n"
-"PO-Revision-Date: 2022-07-03 08:39+0200\n"
+"POT-Creation-Date: 2022-07-03 10:19+0200\n"
+"PO-Revision-Date: 2022-07-03 10:19+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -15,7 +15,6 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _;__;_e;esc_html__;esc_html_e;loading\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: functions.php\n"
 
 #: 404.php:11
 msgid "Page not found"
@@ -81,6 +80,34 @@ msgstr "Menu"
 msgid "Contact"
 msgstr "Kontakt"
 
+#: functions.php:84
+msgid "Primary"
+msgstr ""
+
+#: functions.php:85
+msgid "Secondary"
+msgstr ""
+
+#: functions.php:86
+msgid "Secondary-footer-category"
+msgstr ""
+
+#: functions.php:107
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:109
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:250
+msgid "Previous article"
+msgstr "Poprzedni post"
+
+#: functions.php:262
+msgid "Next article"
+msgstr "Następny post"
+
 #: header.php:53
 msgid "Get set.."
 msgstr "Wyszukaj.."
@@ -133,12 +160,6 @@ msgstr "Czytaj więcej"
 #: template-parts/loop.php:37
 msgid "No posts found"
 msgstr "Nie znaleziono postów"
-
-#~ msgid "Previous article"
-#~ msgstr "Poprzedni post"
-
-#~ msgid "Next article"
-#~ msgstr "Następny post"
 
 #~ msgid "Info"
 #~ msgstr "Info"
