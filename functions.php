@@ -19,7 +19,7 @@ function levy52_setup()
     'flex-width'  => true,
   ));
   add_theme_support('custom-header', array(
-    'default-image'  => get_template_directory_uri() . '/includes/img/default-header-rain.jpg',
+    'default-image'  => get_template_directory_uri() . '/assets/images/default-header-rain.png',
     'header-text'    => false,
     'width'          => 2000,
     'height'         => 280,
