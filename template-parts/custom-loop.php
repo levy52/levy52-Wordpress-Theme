@@ -11,7 +11,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'pub
                     <div class="post_article_img"><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
                                                         echo the_post_thumbnail('thumbnail', array('class' => 'post-cover'));
                                                     } else {
-                                                        echo '<img src="' . get_template_directory_uri() . '/assets/images/stop.jpg" width="100%" height="100%" style="
+                                                        echo '<img src="' . get_template_directory_uri() . '/assets/images/default-image.jpg" width="100%" height="100%" style="
                                                     aspect-ratio: 16/9;"/>';
                                                     } ?>
                     </div>
