@@ -45,7 +45,7 @@
                 ?>
             </div>
         </div>
-        <div class="search-icon ms-auto"><a href="#search"><img src="<?php echo get_template_directory_uri() ?> /assets/images/search-icon.png" /></a></div>
+        <div class="search-icon ms-auto"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
     </nav>
     <div id="search">
         <div class="close">x</div>
