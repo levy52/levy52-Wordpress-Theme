@@ -482,3 +482,11 @@ li .comment-meta {
 .wpb-posts-nav__thumbnail img {
   border-radius: 10px;
 }
+
+.wpcf7-list-item {
+  margin: 0;
+}
+
+.mc4wp-checkbox span::before {
+  content: " ";
+}
