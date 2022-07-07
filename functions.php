@@ -275,3 +275,5 @@ function wpb_posts_nav()
 
 <?php endif;
 }
+
+add_theme_support( 'responsive-embeds' );
