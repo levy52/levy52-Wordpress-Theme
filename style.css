@@ -77,6 +77,12 @@ a {
   aspect-ratio: 16/9;
 }
 
+.levy52_loadmore {
+  width: 30vw;
+  margin: auto;
+  padding: 10px 0;
+}
+
 .levy52_loadmore .load {
   display: none;
 }
