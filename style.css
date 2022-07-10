@@ -311,9 +311,6 @@ figcaption {
 .comment-body .comment-reply-link {
   display: inline-block;
   padding: 2px 6px;
-  background: #925ef7;
-  color: white;
-  border-radius: 4px;
   line-height: 20px;
 }
 
@@ -344,16 +341,6 @@ li .comment-meta {
   border: 1px solid #925ef7;
   color: #925ef7;
   border-radius: 10px;
-}
-
-.form-submit #submit {
-  display: inline-block;
-  padding: 7px 10px;
-  background: #925ef7;
-  color: white;
-  font-weight: 600;
-  border-radius: 10px;
-  line-height: 20px;
 }
 
 @media all and (min-width: 768px) {
@@ -406,16 +393,6 @@ li .comment-meta {
   background-color: transparent;
   border: 1px solid #925ef7;
   color: #925ef7;
-}
-
-.mc4wp-form-basic input[type=submit] {
-  display: inline-block;
-  padding: 7px 10px;
-  background: #925ef7;
-  color: white;
-  font-weight: 600;
-  border-radius: 10px;
-  line-height: 20px;
 }
 
 .mc4wp-form-basic input[type=checkbox] {
