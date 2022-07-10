@@ -45,7 +45,7 @@ if (post_password_required()) {
 		// remove "Text or HTML to be displayed after the set of comment fields"
 		'comment_notes_after' => '',
 		// redefine your own textarea (the comment body)
-		'comment_field' => '<span class="comment-form-comment"><label for="comment">' . __('Comment', 'levy52') . '</label><textarea id="comment" name="comment" aria-required="true"></textarea></span>',
+		'comment_field' => '<span class="comment-form-comment"><label for="comment">' . __('Comment', 'levy52') . ' <span class="required">*</span></label><textarea id="comment" name="comment" aria-required="true"></textarea></span>',
 	 	'class_submit' => '',
 	); ?>
 
