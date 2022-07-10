@@ -147,6 +147,9 @@ a {
   font-size: larger;
   padding: 5px;
 }
+.post_article_img {
+  margin: 20px 0 40px 0;
+}
 
 .post_article_title a:hover {
   color: rgb(255, 255, 255);
