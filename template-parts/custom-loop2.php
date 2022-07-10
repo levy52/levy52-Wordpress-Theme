@@ -32,7 +32,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status' => 'publis
                     </ul>
                 </div>
                 <div class="text_post"><?php the_excerpt(); ?></div>
-                <p class="para_more"><a href="<?php the_permalink() ?>" class="btn btn-success"><?php _e('Read more', 'levy52'); ?></a></p>
+                <p class="para_more"><a href="<?php the_permalink() ?>" class="btn btn-sample"><?php _e('Read more', 'levy52'); ?></a></p>
             </div>
         <?php endwhile; ?>
 </div>

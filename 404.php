@@ -14,7 +14,7 @@ get_header();
                 
                 <form role="search" method="get" id="searchform" class="searchform col-md-4 mx-auto mb-5 d-flex" action="<?php bloginfo("url"); ?>">
                     <input class="form-control" type="search" value="" name="s" id="s" placeholder="" aria-label="Search">
-                    <button class="btn btn-danger ms-3" type="submit" id="searchsubmit" value="Search"><?php _e( 'Search', 'levy52' ); ?></button>
+                    <button class="btn btn-sample ms-3" type="submit" id="searchsubmit" value="Search"><?php _e( 'Search', 'levy52' ); ?></button>
                 </form>
             </div>
         </div>

@@ -77,30 +77,6 @@ a {
   aspect-ratio: 16/9;
 }
 
-.levy52_loadmore {
-  width: 30vw;
-  margin: auto;
-  background-color: #45018E;
-  color: #060606;
-  border-radius: 5px;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase;
-  padding: 10px 0;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
-}
-
-.levy52_loadmore:hover,
-.button-color:hover {
-  background-color: #767676;
-  color: #fff;
-}
-
 .levy52_loadmore .load {
   display: none;
 }
@@ -492,4 +468,51 @@ li .comment-meta {
 
 .mc4wp-checkbox span::before {
   content: " ";
+}
+
+.btn-sample { 
+  font-weight: 600;
+  color: #ffffff; 
+  background-color: #925ef7; 
+  border-color: #130269; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #ffffff; 
+  background-color: #49247A; 
+  border-color: #130269; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #925ef7; 
+  border-color: #130269; 
+} 
+ 
+.btn-sample .badge { 
+  color: #925ef7; 
+  background-color: #ffffff; 
 }
