@@ -277,3 +277,12 @@ function wpb_posts_nav()
 }
 
 add_theme_support( 'responsive-embeds' );
+
+//Load recaptcha script with Contact Form 7 only where necessary
+add_action('wp_print_scripts', function () {
+	global $post;
+	if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
+		wp_dequeue_script( 'google-recaptcha' );
+		wp_dequeue_script( 'wpcf7-recaptcha' );
+	}
+});
