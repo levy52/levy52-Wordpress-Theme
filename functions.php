@@ -286,3 +286,13 @@ add_action('wp_print_scripts', function () {
 		wp_dequeue_script( 'wpcf7-recaptcha' );
 	}
 });
+
+//Customize the title for the home page
+add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
+function wpdocs_hack_wp_title_for_home( $title )
+{
+  if ( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    $title = __( 'Home', 'levy52' ) . '' . get_bloginfo( 'description' );
+  }
+  return $title;
+}
