@@ -1,10 +1,7 @@
 <footer class="text-center text-lg-start rich-black">
   
   <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
-    <div class="me-5 d-none d-sm-block">
-      <div class="socialmedia"><?php _e('Get connected with us on social networks:', 'levy52');
-                                dynamic_sidebar("socialmedia"); ?></div>
-    </div>
+      <div class="socialmedia"><?php dynamic_sidebar("socialmedia"); ?></div>
   </section>
 
   <section class="rich-black">
@@ -72,7 +69,7 @@
 
 
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022 Copyright:
+    Radoslawny.pl © 2022 Copyright:
     <a class="text-reset fw-bold" href="https://github.com/levy52">levy52 Theme</a>
   </div>
 

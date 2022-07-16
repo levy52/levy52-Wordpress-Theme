@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: levy52\n"
-"POT-Creation-Date: 2022-07-03 10:19+0200\n"
-"PO-Revision-Date: 2022-07-03 10:19+0200\n"
+"POT-Creation-Date: 2022-07-16 12:45+0200\n"
+"PO-Revision-Date: 2022-07-16 12:45+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -60,23 +60,23 @@ msgstr "Napisz odpowiedź albo skomentuj"
 msgid "Comment"
 msgstr "Komentarz"
 
-#: footer.php:6
+#: footer.php:5
 msgid "Get connected with us on social networks:"
 msgstr "Połącz się z nami w sieciach społecznościowych:"
 
-#: footer.php:20
+#: footer.php:15
 msgid "Company name"
 msgstr "Nazwa firmy"
 
-#: footer.php:30
+#: footer.php:22
 msgid "Category"
 msgstr "Kategorie"
 
-#: footer.php:54
+#: footer.php:43
 msgid "Menu"
 msgstr "Menu"
 
-#: footer.php:79
+#: footer.php:65
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -107,6 +107,10 @@ msgstr "Poprzedni post"
 #: functions.php:262
 msgid "Next article"
 msgstr "Następny post"
+
+#: functions.php:295
+msgid "Home"
+msgstr "Strona główna"
 
 #: header.php:53
 msgid "Get set.."
