@@ -1,7 +1,21 @@
+<?php if (!is_front_page()) : ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <?php
+        if (function_exists('yoast_breadcrumb')) {
+          yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+        }
+        ?>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
+
 <footer class="text-center text-lg-start rich-black">
-  
+
   <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
-      <div class="socialmedia"><?php dynamic_sidebar("socialmedia"); ?></div>
+    <div class="socialmedia"><?php dynamic_sidebar("socialmedia"); ?></div>
   </section>
 
   <section class="rich-black">

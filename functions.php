@@ -296,3 +296,6 @@ function wpdocs_hack_wp_title_for_home( $title )
   }
   return $title;
 }
+
+//Support for Yoast SEO breadcrumbs
+add_theme_support( 'yoast-seo-breadcrumbs' );
