@@ -246,29 +246,61 @@ a {
 .cat-item {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/category/mechanic.jpg);
   background-size: cover;
-  padding: 30px;
-  font-size: xx-large;
+  font-size: small;
   margin: 10px;
   text-align: center;
 }
 
 .cat-item:hover {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url(assets/images/category/mechanic.jpg);
-  ;
 }
 
 .cat-item a {
-  background-color: #45018E;
-  padding: 1px 15px 1px 15px;
+  padding: 40px 100px;
+  display: block;
+  background-clip: content-box;
   color: #fff;
+  background-color: #45018E;
 }
 
 .cat-item-14 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/keys.jpg");
+  background-size: cover;
 }
 
 .cat-item-14:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/keys.jpg");
+  background-size: cover;
+}
+
+.cat-item-16 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/golf3.webp");
+  background-size: cover;
+}
+
+.cat-item-16:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/golf3.webp");
+  background-size: cover;
+}
+
+.cat-item-40 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/garaz.webp");
+  background-size: cover;
+}
+
+.cat-item-40:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/garaz.webp");
+  background-size: cover;
+}
+
+.cat-item-17 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/passatb5.webp");
+  background-size: cover;
+}
+
+.cat-item-17:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/passatb5.webp");
+  background-size: cover;
 }
 
 figcaption {

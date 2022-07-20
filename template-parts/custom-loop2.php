@@ -17,7 +17,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status' => 'publis
                     </div>
 
                     <ul class="post_article_info">
-                        <li><?php the_date(); ?></li>
+                        <li><?php echo get_the_date(); ?></li>
                         <li><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>"><?php echo the_author_meta('display_name'); ?></a></li>
                         <li><?php
                             $categories = get_the_category();
