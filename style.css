@@ -531,3 +531,13 @@ fieldset[disabled] .btn-sample.active {
   color: #925ef7; 
   background-color: #ffffff; 
 }
+
+.article-share {
+  top: -17px;
+  position: relative;
+}
+
+.article-share-bg {
+  background-color: #17171A;
+  position: absolute;
+}
