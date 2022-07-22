@@ -254,7 +254,7 @@ function wpb_posts_nav()
           </a>
         <?php endif; ?>
       </div>
-      <div class="col-12 col-lg-6 d-flex flex-nowrap justify-content-lg-end mb-4">
+      <div class="col-12 col-lg-6 d-flex flex-nowrap justify-content-lg-end mb-4 mt-lg-4">
         <?php if (!empty($next_post)) : ?>
           <a href="<?php echo get_permalink($next_post); ?>">
             <div class="order-2 order-lg-1">

@@ -244,7 +244,7 @@ a {
 }
 
 .cat-item {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/category/mechanic.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/mechanic.webp");
   background-size: cover;
   font-size: small;
   margin: 10px;
@@ -252,7 +252,7 @@ a {
 }
 
 .cat-item:hover {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url(assets/images/category/mechanic.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/mechanic.webp");
 }
 
 .cat-item a {
@@ -264,12 +264,12 @@ a {
 }
 
 .cat-item-14 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/keys.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/keys.webp");
   background-size: cover;
 }
 
 .cat-item-14:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/keys.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/keys.webp");
   background-size: cover;
 }
 
@@ -300,6 +300,16 @@ a {
 
 .cat-item-17:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/passatb5.webp");
+  background-size: cover;
+}
+
+.cat-item-66 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/golf4.webp");
+  background-size: cover;
+}
+
+.cat-item-66:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/golf4.webp");
   background-size: cover;
 }
 
