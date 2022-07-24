@@ -20,7 +20,7 @@
         </div>
     <?php endif; ?>
 
-    <nav class="navbar navbar-dark navbar-expand-md text-secondary border-bottom rich-black">
+    <nav class="navbar navbar-dark navbar-expand-lg text-secondary border-bottom rich-black">
         <div class="container-fluid">
             <div class="logo">
                 <?php the_custom_logo(); ?>
