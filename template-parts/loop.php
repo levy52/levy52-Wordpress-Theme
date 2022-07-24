@@ -6,16 +6,15 @@ if (have_posts()) :
             <div class="post_article_content">
                 <h1 class="post_article_title fs-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <div class="post_article_img"><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
-                                                    echo the_post_thumbnail('thumbnail', array('class' => 'post-cover'));
-                                                } else {
-                                                    echo '<img src="' .get_template_directory_uri() . '/assets/images/default-image.jpg" width="100%" height="100%" style="
+                                                                                        echo the_post_thumbnail('thumbnail', array('class' => 'post-cover'));
+                                                                                    } else {
+                                                                                        echo '<img src="' . get_template_directory_uri() . '/assets/images/default-image.jpg" width="100%" height="100%" style="
                                                     aspect-ratio: 16/9;"/>';
-                                                } ?>
+                                                                                    } ?>
                 </div>
 
                 <ul class="post_article_info">
                     <li><?php echo get_the_date(); ?></li>
-                    <li><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>"><?php echo the_author_meta('display_name'); ?></a></li>
                     <li><?php
                         $categories = get_the_category();
                         $separator = ' ';
@@ -26,10 +25,11 @@ if (have_posts()) :
                             }
                             echo trim($output, $separator);
                         } ?> </li>
+                    </li>
                 </ul>
             </div>
             <div class="text_post"><?php the_excerpt(); ?></div>
-            <p class="para_more"><a href="<?php the_permalink() ?>" class="btn btn-sample"><?php _e( 'Read more', 'levy52' ); ?></a></p>
+            <p class="para_more"><a href="<?php the_permalink() ?>" class="btn btn-sample"><?php _e('Read more', 'levy52'); ?></a></p>
         </div>
     <?php endwhile; ?>
 

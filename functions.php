@@ -299,3 +299,8 @@ function wpdocs_hack_wp_title_for_home( $title )
 
 //Support for Yoast SEO breadcrumbs
 add_theme_support( 'yoast-seo-breadcrumbs' );
+
+add_filter( 'get_the_excerpt', 'wpse_367505_excerpt' );
+function wpse_367505_excerpt( $excerpt ) {
+    return substr( $excerpt, 0, 150 ) . '..';
+}

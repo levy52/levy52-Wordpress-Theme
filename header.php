@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="Author" content="Radosław Lewicki">
-    <title><?php wp_title(''); echo ' | ';  bloginfo( 'name' ); ?></title>
+    <title><?php wp_title(''); ?></title>
     <?php wp_head(); ?>
 </head>
 

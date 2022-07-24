@@ -21,11 +21,20 @@ body {
 a {
   color: #925ef7;
   text-decoration: none;
+  display: inline-block;
 }
 
-.button-color {
-  background-color: #45018E;
-  color: #060606;
+.center-menu li:after, footer li:after {
+  transition: all ease-in-out .2s;
+  background: none repeat scroll 0 0 #ffffff;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  margin-top: -2px;
+}
+.center-menu li:hover:after, footer li:hover:after {
+  width: 100%;
 }
 
 .center-menu {
@@ -53,7 +62,8 @@ a {
   .center-menu .dropdown-menu,
   .dropdown-item {
     background-color: #060606;
-    color: rgba(255, 255, 255, 0.55)
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 10px;
   }
 
   .dropdown-item:hover {
@@ -204,7 +214,7 @@ a {
 
 #search input[type="search"] {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 100%;
   color: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 0);
@@ -213,7 +223,6 @@ a {
   text-align: center;
   border: 0px;
   margin: 0px auto;
-  margin-top: -120px;
   padding-left: 30px;
   padding-right: 30px;
   outline: none;
@@ -225,7 +234,6 @@ a {
   left: 50%;
   min-width: 100px;
   max-width: 200px;
-  margin-top: 1vw;
   margin-left: -45px;
 }
 
@@ -393,7 +401,7 @@ li .comment-meta {
   border-radius: 10px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
   }
