@@ -5,12 +5,12 @@ if (have_posts()) :
         <div class="post_article col-md-6">
             <div class="post_article_content">
                 <h1 class="post_article_title fs-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <div class="post_article_img"><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
+                <div class="post_article_img"><a href="<?php the_permalink(); ?>" ><?php if (has_post_thumbnail()) {
                                                                                         echo the_post_thumbnail('thumbnail', array('class' => 'post-cover'));
                                                                                     } else {
                                                                                         echo '<img src="' . get_template_directory_uri() . '/assets/images/default-image.jpg" width="100%" height="100%" style="
                                                     aspect-ratio: 16/9;"/>';
-                                                                                    } ?>
+                                                                                    } ?> </a>
                 </div>
 
                 <ul class="post_article_info">

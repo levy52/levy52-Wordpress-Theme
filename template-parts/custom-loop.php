@@ -13,7 +13,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'pub
                                                     } else {
                                                         echo '<img src="' . get_template_directory_uri() . '/assets/images/default-image.jpg" width="100%" height="100%" style="
                                                     aspect-ratio: 16/9;"/>';
-                                                    } ?>
+                                                    } ?> </a>
                     </div>
 
                     <ul class="post_article_info">

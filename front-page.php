@@ -12,7 +12,7 @@ get_header();
     <div class="row">
         <div class="col-12 col-md-8 col-xxl-9">
             <?php get_template_part('/template-parts/custom-loop'); ?>
-            <h2 class="mt-5">Warsztat</h2>
+            <h2 class="mt-5">Zapoznaj się z..</h2>
             <?php get_template_part('/template-parts/custom-loop2'); ?>
         </div><?php get_sidebar('sidebar'); ?>
     </div>  
