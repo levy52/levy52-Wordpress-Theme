@@ -37,7 +37,7 @@ a {
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .center-menu {
     margin: 0;
     position: absolute;
