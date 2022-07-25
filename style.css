@@ -582,3 +582,21 @@ fieldset[disabled] .btn-sample.active {
   background-color: #17171A;
   position: absolute;
 }
+
+.single-date-post::after {
+  content: "-";
+  margin-left: 3px;
+}
+
+.header-post {
+  display: flex;
+  justify-content: center;
+}
+
+.header-post span {
+  margin: 0 5px 0 0;
+}
+
+.single-post-comments {
+  letter-spacing: 1px;
+}
