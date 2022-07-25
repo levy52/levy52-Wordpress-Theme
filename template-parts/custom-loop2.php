@@ -7,7 +7,6 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status' => 'publis
         <?php while ($blog_posts->have_posts()) : $blog_posts->the_post(); ?>
             <div class="post_article px-1">
                 <div class="post_article_content">
-                    <h1 class="post_article_title fs-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                     <div class="post_article_img mb-1"><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
                                                         echo the_post_thumbnail('thumbnail', array('class' => 'post-cover'));
                                                     } else {

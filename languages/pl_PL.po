@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: levy52\n"
-"POT-Creation-Date: 2022-07-16 12:45+0200\n"
-"PO-Revision-Date: 2022-07-16 12:45+0200\n"
+"POT-Creation-Date: 2022-07-25 15:05+0200\n"
+"PO-Revision-Date: 2022-07-25 15:05+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -60,23 +60,19 @@ msgstr "Napisz odpowiedź albo skomentuj"
 msgid "Comment"
 msgstr "Komentarz"
 
-#: footer.php:5
-msgid "Get connected with us on social networks:"
-msgstr "Połącz się z nami w sieciach społecznościowych:"
-
-#: footer.php:15
+#: footer.php:26
 msgid "Company name"
 msgstr "Nazwa firmy"
 
-#: footer.php:22
+#: footer.php:33 template-parts/loop.php:30
 msgid "Category"
-msgstr "Kategorie"
+msgstr "Kategoria"
 
-#: footer.php:43
+#: footer.php:54
 msgid "Menu"
 msgstr "Menu"
 
-#: footer.php:65
+#: footer.php:76
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -137,7 +133,7 @@ msgstr "Więcej postów"
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
-#: sidebar.php:4
+#: sidebar.php:4 template-parts/loop.php:32
 msgid "Categories"
 msgstr "Kategorie"
 
@@ -149,21 +145,23 @@ msgstr "Najnowsze komentarze"
 msgid "Newsletter"
 msgstr ""
 
-#: template-parts/custom-loop.php:28 template-parts/custom-loop2.php:28
-#: template-parts/loop.php:25
+#: template-parts/custom-loop.php:27 template-parts/loop.php:36
 #, php-format
 msgid "View all posts in %s"
 msgstr "Zobacz wszystkie posty w %s"
 
-#: template-parts/custom-loop.php:35 template-parts/custom-loop2.php:35
-#: template-parts/loop.php:32
+#: template-parts/custom-loop.php:34 template-parts/custom-loop2.php:19
+#: template-parts/loop.php:46
 msgid "Read more"
 msgstr "Czytaj więcej"
 
-#: template-parts/custom-loop.php:40 template-parts/custom-loop2.php:41
-#: template-parts/loop.php:37
+#: template-parts/custom-loop.php:39 template-parts/custom-loop2.php:27
+#: template-parts/loop.php:51
 msgid "No posts found"
 msgstr "Nie znaleziono postów"
+
+#~ msgid "Get connected with us on social networks:"
+#~ msgstr "Połącz się z nami w sieciach społecznościowych:"
 
 #~ msgid "Info"
 #~ msgstr "Info"
