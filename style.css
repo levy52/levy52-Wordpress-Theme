@@ -458,7 +458,7 @@ li .comment-meta {
 }
 
 .one-time {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .one-time .slick-dots li button:before {
@@ -476,11 +476,11 @@ li .comment-meta {
 }
 
 .one-time .slick-prev {
-  left: -5px;
+  left: .5px;
 }
 
 .one-time .slick-next {
-  right: -5px;
+  right: .5px;
 }
 
 .sidebar-comments {
