@@ -492,7 +492,10 @@ li .comment-meta {
   text-align: center;
 }
 
-.mc4wp-form-basic input[type=email] {
+.mc4wp-form-basic input[type=email],
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea,
+.form-control:focus {
   background-color: transparent;
   border: 1px solid #925ef7;
   color: #925ef7;
