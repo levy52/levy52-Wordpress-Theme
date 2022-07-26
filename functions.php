@@ -304,3 +304,11 @@ add_filter( 'get_the_excerpt', 'wpse_367505_excerpt' );
 function wpse_367505_excerpt( $excerpt ) {
     return substr( $excerpt, 0, 150 ) . '..';
 }
+
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
