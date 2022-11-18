@@ -20,29 +20,31 @@
         </div>
     <?php endif; ?>
 
-    <nav class="navbar navbar-dark navbar-expand-lg text-secondary border-bottom rich-black">
+    <nav class="navbar navbar-dark navbar-expand-lg text-secondary border-bottom sticky-top rich-black">
         <div class="container position-relative">
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'levy52'); ?>">
+            <button class="navbar-toggler ms-auto" type="button" onclick="openNav()">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <div class="collapse navbar-collapse order-2 order-lg-0" id="navbarSupportedContent">
-
+            <div class="primary-menu order-2 order-lg-0" id="navbarSupportedContent">
+            <div class="logo d-lg-none">
+                <?php the_custom_logo(); ?>
+            </div>
                 <?php
                 wp_nav_menu(array(
                     'theme_location'    => 'primary',
                     'depth'             => 2,
                     'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse center-menu justify-content-center',
-                    'container_id'      => 'navbarSupportedContent',
+                    'container_class'   => 'center-menu justify-content-center',
                     'menu_class'        => 'nav navbar-nav',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                     'walker'            => 'WP_Bootstrap_Navwalker',
                 ));
                 ?>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
             <div class="search-icon order-1"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
         </div>

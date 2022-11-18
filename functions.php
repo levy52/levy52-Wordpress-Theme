@@ -1,12 +1,13 @@
 <?php
 
 function levy52_scripts()
-{ // style, style bootstrap i js bootstrap
+{ 
   wp_enqueue_style('bootstrap_css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
   wp_enqueue_style('levy52_style', get_stylesheet_uri());
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', false, null);
   wp_enqueue_script('searchbox', get_template_directory_uri() . '/js/searchbox.js', array('jquery'));
+  wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js');
 }
 
 function levy52_setup()
@@ -33,8 +34,6 @@ add_action('wp_enqueue_scripts', 'levy52_scripts');
 load_theme_textdomain('levy52', get_template_directory() . '/languages');
 
 
-// Bootstrap Navwalker -->
-
 function register_navwalker()
 {
   require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
@@ -50,14 +49,7 @@ function prefix_modify_nav_menu_args($args)
 add_filter('wp_nav_menu_args', 'prefix_modify_nav_menu_args');
 
 add_filter('nav_menu_link_attributes', 'prefix_bs5_dropdown_data_attribute', 20, 3);
-/**
- * Use namespaced data attribute for Bootstrap's dropdown toggles.
- *
- * @param array    $atts HTML attributes applied to the item's `<a>` element.
- * @param WP_Post  $item The current menu item.
- * @param stdClass $args An object of wp_nav_menu() arguments.
- * @return array
- */
+
 function prefix_bs5_dropdown_data_attribute($atts, $item, $args)
 {
   if (is_a($args->walker, 'WP_Bootstrap_Navwalker')) {
@@ -78,15 +70,12 @@ function slug_provide_walker_instance($args)
 }
 add_filter('wp_nav_menu_args', 'slug_provide_walker_instance', 1001);
 
-
-// Rejestracja menu
 register_nav_menus(array(
   'primary' => __('Primary', 'main-menu'),
   'footer' => __('Secondary', 'footer-menu'),
   'footer_category' => __('Secondary-footer-category', 'footer-category'),
 ));
 
-// Widget social media in footer
 function pm_widgets_init()
 {
   register_sidebar(array(
@@ -100,7 +89,6 @@ function pm_widgets_init()
 }
 add_action('widgets_init', 'pm_widgets_init');
 
-// Widget sidebar
 function _s_widgets_init()
 {
   register_sidebar(array(
@@ -115,7 +103,6 @@ function _s_widgets_init()
 }
 add_action('widgets_init', '_s_widgets_init');
 
-// Widget Company name in footer
 function widget_company_name()
 {
   register_sidebar(array(
@@ -129,7 +116,6 @@ function widget_company_name()
 }
 add_action('widgets_init', 'widget_company_name');
 
-// Widget contact in footer
 function widget_contact()
 {
   register_sidebar(array(
@@ -143,21 +129,14 @@ function widget_contact()
 }
 add_action('widgets_init', 'widget_contact');
 
-// Load more posts 
 function levy52_my_load_more_scripts()
 {
-
   global $wp_query;
 
-  // register our main script but do not enqueue it yet
   wp_register_script('my_loadmore', get_stylesheet_directory_uri() . '/js/myloadmore.js', array('jquery'));
-
-  // now the most interesting part
-  // we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
-  // you can define variables directly in your HTML but I decided that the most proper way is wp_localize_script()
   wp_localize_script('my_loadmore', 'levy52_loadmore_params', array(
-    'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
-    'posts' => json_encode($wp_query->query_vars), // everything about your loop is here
+    'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', 
+    'posts' => json_encode($wp_query->query_vars), 
     'current_page' => get_query_var('paged') ? get_query_var('paged') : 1,
     'max_page' => $wp_query->max_num_pages
   ));
@@ -167,35 +146,21 @@ function levy52_my_load_more_scripts()
 
 add_action('wp_enqueue_scripts', 'levy52_my_load_more_scripts');
 
-// Ajax Load more
 function levy52_loadmore_ajax_handler()
 {
 
-  // prepare our arguments for the query
+  
   $args = json_decode(stripslashes($_POST['query']), true);
-  $args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
+  $args['paged'] = $_POST['page'] + 1; 
   $args['post_status'] = 'publish';
 
-  // it is always better to use WP_Query but not here
   query_posts($args);
-
-
-
-  // look into your theme code how the posts are inserted, but you can use your own HTML of course
-  // do you remember? - my example is adapted for Twenty Seventeen theme
   get_template_part('/template-parts/loop', 'index');
-  // for the test purposes comment the line above and uncomment the below one
-  // the_title();
-
-
-
-  die; // here we exit the script and even no wp_reset_query() required!
+  die; 
 }
 
-add_action('wp_ajax_loadmore', 'levy52_loadmore_ajax_handler'); // wp_ajax_{action}
-add_action('wp_ajax_nopriv_loadmore', 'levy52_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
-
-// Go to top function
+add_action('wp_ajax_loadmore', 'levy52_loadmore_ajax_handler'); 
+add_action('wp_ajax_nopriv_loadmore', 'levy52_loadmore_ajax_handler'); 
 
 function my_scripts_method()
 {
@@ -207,7 +172,6 @@ function my_scripts_method()
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
-//Slick slider
 function add_slick()
 {
   wp_enqueue_style('slider', get_template_directory_uri() . '/assets/components/slick/slick.css', array(), '1.0', 'all');
@@ -220,7 +184,6 @@ function add_slick()
 }
 add_action('wp_enqueue_scripts', 'add_slick');
 
-//Remove Website (URL) Field
 function wpbeginner_remove_comment_url($arg)
 {
   $arg['url'] = '';
@@ -228,7 +191,6 @@ function wpbeginner_remove_comment_url($arg)
 }
 add_filter('comment_form_default_fields', 'wpbeginner_remove_comment_url');
 
-//Prev-Next Post with thumbnail
 function wpb_posts_nav()
 {
   $next_post = get_next_post();
@@ -278,7 +240,6 @@ function wpb_posts_nav()
 
 add_theme_support( 'responsive-embeds' );
 
-//Load recaptcha script with Contact Form 7 only where necessary
 add_action('wp_print_scripts', function () {
 	global $post;
 	if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
@@ -287,7 +248,6 @@ add_action('wp_print_scripts', function () {
 	}
 });
 
-//Customize the title for the home page
 add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
 function wpdocs_hack_wp_title_for_home( $title )
 {
@@ -297,7 +257,6 @@ function wpdocs_hack_wp_title_for_home( $title )
   return $title;
 }
 
-//Support for Yoast SEO breadcrumbs
 add_theme_support( 'yoast-seo-breadcrumbs' );
 
 add_filter( 'get_the_excerpt', 'wpse_367505_excerpt' );
