@@ -21,22 +21,22 @@
     <?php endif; ?>
 
     <nav class="navbar navbar-dark navbar-expand-lg text-secondary border-bottom rich-black">
-        <div class="container-fluid">
+        <div class="container position-relative">
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
-
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'levy52'); ?>">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+            <div class="collapse navbar-collapse order-2 order-lg-0" id="navbarSupportedContent">
 
                 <?php
                 wp_nav_menu(array(
                     'theme_location'    => 'primary',
                     'depth'             => 2,
                     'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse center-menu',
+                    'container_class'   => 'collapse navbar-collapse center-menu justify-content-center',
                     'container_id'      => 'navbarSupportedContent',
                     'menu_class'        => 'nav navbar-nav',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -44,8 +44,8 @@
                 ));
                 ?>
             </div>
+            <div class="search-icon order-1"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
         </div>
-        <div class="search-icon ms-auto"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
     </nav>
     <div id="search">
         <div class="close">x</div>

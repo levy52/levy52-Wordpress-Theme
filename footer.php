@@ -15,7 +15,7 @@
 <footer class="text-center text-lg-start rich-black">
 
   <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
-    <div class="socialmedia"><?php dynamic_sidebar("socialmedia"); ?></div>
+    <div class="container socialmedia"><?php dynamic_sidebar("socialmedia"); ?></div>
   </section>
 
   <section class="rich-black">
@@ -23,9 +23,9 @@
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold mb-4 text-secondary">
-            <?php _e('Company name', 'levy52'); ?>
-          </h6>
-          <?php dynamic_sidebar("companyname"); ?>
+          <div class="logo">
+                <?php the_custom_logo(); ?>
+            </div>
         </div>
 
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -82,7 +82,7 @@
   </section>
 
 
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-4">
     Radoslawny.pl © 2022 Copyright:
     <a class="text-reset fw-bold" href="https://github.com/levy52">levy52 Theme</a>
   </div>

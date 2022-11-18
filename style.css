@@ -25,6 +25,7 @@ a:hover {
 a {
   color: #925ef7;
   text-decoration: none;
+  transition: color .3s;
 }
 
 @media (min-width: 992px) {
@@ -59,13 +60,6 @@ a {
 }
 
 @media (min-width: 992px) {
-  .center-menu {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-  }
 
   .center-menu ul li {
     margin: 10px
@@ -93,12 +87,21 @@ a {
   display: inline-flex;
 }
 
-.post-cover,
-.custom-logo {
+.post-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
   aspect-ratio: 16/9;
+  transition: transform .3s;
+}
+
+.post-cover:hover {
+  transform: scale(1.1);
+}
+
+.custom-logo {
+  width: 150px;
+  height: auto;
 }
 
 .levy52_loadmore {
@@ -134,6 +137,11 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   display: none;
+  transition: transform .3s;
+}
+
+.topbutton:hover {
+  transform: scale(1.2);
 }
 
 .sidebar-style ul,
@@ -144,6 +152,7 @@ a {
 
 .post_article_img {
   position: relative;
+  overflow: hidden;
 }
 
 .post-date {
@@ -170,6 +179,7 @@ a {
 
 .post_article_img {
   margin: 20px 0 20px 0;
+  transition: opacity .3s;
 }
 
 .post_article_title a:hover {
@@ -178,20 +188,21 @@ a {
 
 .post_article_img:hover {
   opacity: 0.70;
-  filter: alpha(opacity=70);
-  transition: .3s;
 }
 
 .post_article_img:hover a .post-date {
   display: block;
 }
 
+.search-icon {
+  padding-left: 10px;
+}
+
 .search-icon img {
-  top: 55px;
-  right: 90px;
   width: 20px;
   height: 20px;
-  position: absolute;
+  opacity: .6;
+  transition: transform .3s;
 }
 
 .search-icon img:hover {
@@ -199,7 +210,6 @@ a {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   z-index: 0;
-  transition: .3s;
 }
 
 #search {
@@ -285,15 +295,13 @@ a {
 }
 
 .cat-item {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/mechanic.webp");
+  background-image: url("assets/images/category/mechanic.webp");
   background-size: cover;
-  font-size: small;
+  font-size: 1rem;
   margin: 10px;
   text-align: center;
-}
-
-.cat-item:hover {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/mechanic.webp");
+  opacity: .7;
+  transition: opacity .3s;
 }
 
 .cat-item a {
@@ -305,53 +313,28 @@ a {
 }
 
 .cat-item-14 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/keys.webp");
-  background-size: cover;
-}
-
-.cat-item-14:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/keys.webp");
-  background-size: cover;
+  background-image: url("assets/images/category/keys.webp");
 }
 
 .cat-item-16 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/golf3.webp");
-  background-size: cover;
-}
-
-.cat-item-16:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/golf3.webp");
-  background-size: cover;
+  background-image: url("assets/images/category/golf3.webp");
 }
 
 .cat-item-40 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/garaz.webp");
-  background-size: cover;
-}
-
-.cat-item-40:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/garaz.webp");
-  background-size: cover;
+  background-image: url("assets/images/category/garaz.webp");
 }
 
 .cat-item-17 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/passatb5.webp");
-  background-size: cover;
-}
-
-.cat-item-17:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/passatb5.webp");
-  background-size: cover;
+  background-image: url("assets/images/category/passatb5.webp");
+  background-position: center;
 }
 
 .cat-item-66 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("assets/images/category/golf4.webp");
-  background-size: cover;
+  background-image: url("assets/images/category/golf4.webp");
 }
 
-.cat-item-66:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("assets/images/category/golf4.webp");
-  background-size: cover;
+.cat-item:hover {
+  opacity: 1;
 }
 
 figcaption {
@@ -558,6 +541,7 @@ li .comment-meta {
   color: #ffffff;
   background-color: #925ef7;
   border-color: #130269;
+  transition: color .3s, background-color .5s, border-color .3s;
 }
 
 .btn-sample:hover,

@@ -27,4 +27,6 @@ https://pl.wordpress.org/plugins/smart-slider-3/
 - Yoast SEO
 https://pl.wordpress.org/plugins/wordpress-seo/
 
+#### There is also a database dump in the repository (Demo content). Login data: admin/admin
+
 #### If you want to use this theme - you can download or fork (for updates and customization) :)
