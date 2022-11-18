@@ -1,6 +1,5 @@
-function openNav() {
-	document.getElementById('navbarSupportedContent').style.height = '100%'
+function showNavigation() {
+	document.getElementById('navbarSupportedContent').classList.toggle('show-nav')
+
 }
-function closeNav() {
-	document.getElementById('navbarSupportedContent').style.height = '0%'
-}
+window.addEventListener('click', showNavigation)
