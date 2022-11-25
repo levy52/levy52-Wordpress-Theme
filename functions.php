@@ -7,7 +7,6 @@ function levy52_scripts()
   wp_enqueue_script('jquery');
   wp_enqueue_script('bootstapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', false, null);
   wp_enqueue_script('searchbox', get_template_directory_uri() . '/js/searchbox.js', array('jquery'));
-  wp_enqueue_script('custom', get_template_directory_uri() . '/js/custom.js');
 }
 
 function levy52_setup()

@@ -622,7 +622,7 @@ fieldset[disabled] .btn-sample.active {
 }
 
 @media (max-width: 991px) {
-  #navbarSupportedContent {
+  .primary-menu {
     display: flex;
 	  flex-direction: column;
 	  align-items: center;
@@ -635,14 +635,14 @@ fieldset[disabled] .btn-sample.active {
     left: 0;
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: all 0.5s;
   }
 
-  #navbarSupportedContent.show-nav {
+  .primary-menu.show-nav {
     height: 100%;
   }
 
-  #navbarSupportedContent .closebtn {
+  .primary-menu .closebtn {
     position: absolute;
 	  top: 0;
 	  right: 0;
@@ -651,7 +651,7 @@ fieldset[disabled] .btn-sample.active {
     font-size: 4rem;
     color: #818181;
     display: block;
-    transition: transform 0.3s;
+    transition: transform .3s;
   }
 
   .primary-menu .nav-link {

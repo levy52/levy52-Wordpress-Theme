@@ -1,5 +1,7 @@
+const navbar = document.getElementById('navbar-toggler')
 function showNavigation() {
-	document.getElementById('navbarSupportedContent').classList.toggle('show-nav')
-
+	document.getElementById('navbarSupportedContent').classList.add('show-nav')
 }
-window.addEventListener('click', showNavigation)
+
+navbar.addEventListener('click', showNavigation)
+addEventListener('mouseout', () => document.getElementById('navbarSupportedContent').classList.remove('show-nav'))

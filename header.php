@@ -25,7 +25,7 @@
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
-            <button class="navbar-toggler ms-auto" type="button" onclick="openNav()">
+            <button id="navbar-toggler" class="navbar-toggler ms-auto" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
@@ -44,7 +44,7 @@
                     'walker'            => 'WP_Bootstrap_Navwalker',
                 ));
                 ?>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <span class="closebtn">&times;</span>
             </div>
             <div class="search-icon order-1"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
         </div>
