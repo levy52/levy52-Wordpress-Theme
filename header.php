@@ -44,7 +44,7 @@
                     'walker'            => 'WP_Bootstrap_Navwalker',
                 ));
                 ?>
-                <span class="closebtn">&times;</span>
+                <span id="closebtn" class="closebtn">&times;</span>
             </div>
             <div class="search-icon order-1"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
         </div>
