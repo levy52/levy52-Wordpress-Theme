@@ -25,7 +25,7 @@
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
-            <button id="navbar-toggler" class="navbar-toggler ms-auto" type="button">
+            <button id="navbar-toggler" class="navbar-toggler ms-auto" type="button" aria-label="Navbar Toggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
@@ -46,7 +46,7 @@
                 ?>
                 <span id="closebtn" class="closebtn">&times;</span>
             </div>
-            <div class="search-icon order-1"><a href="#search"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" /></a></div>
+            <div class="search-icon order-1"><a href="#search" title="<?php _e('Search', 'levy52')?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" alt="Search icon"/></a></div>
         </div>
     </nav>
     <div id="search">
