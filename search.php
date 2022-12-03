@@ -22,7 +22,7 @@ get_header();
                 global $wp_query;
                 // don't display the button if there are not enough posts
                 if ($wp_query->max_num_pages > 1)
-                echo '<div class="btn btn-sample levy52_loadmore"><span class="load">' . __('Loading', 'levy52') . '</span><span class="more">' . __('More posts', 'levy52') . '</span></div>';
+                echo '<div class="btn-sample levy52_loadmore"><span class="load">' . __('Loading', 'levy52') . '</span><span class="more">' . __('More posts', 'levy52') . '</span></div>';
                 ?>
 
             </div>

@@ -43,7 +43,7 @@ if (have_posts()) :
             </div>
             <div class="text_post"><?php the_excerpt(); ?></div>
             <p class="para_more"><a href="<?php the_permalink() ?>"
-                                    class="btn btn-sample"><?php _e('Read more', 'levy52'); ?></a></p>
+                                    class="btn-sample"><?php _e('Read more', 'levy52'); ?></a></p>
         </div>
     <?php endwhile; ?>
 

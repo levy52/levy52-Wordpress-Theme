@@ -46,7 +46,7 @@ if (post_password_required()) {
 		'comment_notes_after' => '',
 		// redefine your own textarea (the comment body)
 		'comment_field' => '<span class="comment-form-comment"><label for="comment">' . __('Comment', 'levy52') . ' <span class="required">*</span></label><textarea id="comment" name="comment" aria-required="true"></textarea></span>',
-	 	'class_submit' => 'btn btn-sample',
+	 	'class_submit' => 'btn-sample',
 	); ?>
 
 	<?php comment_form($comments_args);

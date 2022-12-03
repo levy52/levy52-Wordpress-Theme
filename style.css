@@ -558,52 +558,53 @@ li .comment-meta {
 }
 
 .btn-sample {
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #925ef7;
-  border-color: #130269;
-  transition: color .3s, background-color .5s, border-color .3s;
+  position: relative;
+  display: block;
+  width: fit-content;
+	padding: 10px 20px;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 10px;
+  font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	overflow: hidden;
 }
 
-.btn-sample:hover,
-.btn-sample:focus,
-.btn-sample:active,
-.btn-sample.active,
-.open .dropdown-toggle.btn-sample {
-  color: #ffffff;
-  background-color: #49247A;
-  border-color: #130269;
+.btn-sample:hover {
+  color: #fff;
 }
 
-.btn-sample:active,
-.btn-sample.active,
-.open .dropdown-toggle.btn-sample {
-  background-image: none;
+.btn-sample::before,
+.btn-sample::after {
+	display: block;
+	position: absolute;
+	content: '';
+	transition: all 0.5s;
+	z-index: -1;
+  width: 100%;
+	height: 100%;
+	background-color: #925ef7;
 }
 
-.btn-sample.disabled,
-.btn-sample[disabled],
-fieldset[disabled] .btn-sample,
-.btn-sample.disabled:hover,
-.btn-sample[disabled]:hover,
-fieldset[disabled] .btn-sample:hover,
-.btn-sample.disabled:focus,
-.btn-sample[disabled]:focus,
-fieldset[disabled] .btn-sample:focus,
-.btn-sample.disabled:active,
-.btn-sample[disabled]:active,
-fieldset[disabled] .btn-sample:active,
-.btn-sample.disabled.active,
-.btn-sample[disabled].active,
-fieldset[disabled] .btn-sample.active {
-  background-color: #8a7ca7;
-  border-color: #130269;
-  color: #4b4645;
+.btn-sample::before {
+	top: -50%;
+	left: -100%;
 }
 
-.btn-sample .badge {
-  color: #925ef7;
-  background-color: #ffffff;
+.btn-sample::after {
+	bottom: -50%;
+	right: -100%;
+}
+
+.btn-sample:hover::before {
+	left: 0;
+}
+
+.btn-sample:hover::after {
+	right: 0;
 }
 
 .article-share {
@@ -644,7 +645,7 @@ fieldset[disabled] .btn-sample.active {
 	  flex-direction: column;
 	  align-items: center;
 	  justify-content: center;
-    height: 0;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -652,11 +653,12 @@ fieldset[disabled] .btn-sample.active {
     left: 0;
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
-    transition: all 0.5s;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
   }
 
   .primary-menu.show-nav {
-    height: 100%;
+    transform: translateY(0);
   }
 
   .primary-menu .closebtn {
@@ -677,6 +679,7 @@ fieldset[disabled] .btn-sample.active {
 
   .closebtn:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 
   .navbar-toggler, 
