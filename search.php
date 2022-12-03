@@ -6,9 +6,10 @@ get_header();
     <div class="row">
         <div class="col-12 col-md-8 col-xxl-9">
             <div class="row">
-                    <div class="page-header">
-                        <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'levy52'), get_search_query()); ?></h1>
-                    </div>
+                <div class="page-header">
+                    <h1 class="page-title">
+                        <?php printf(esc_html__('Search Results for: %s', 'levy52'), get_search_query()); ?></h1>
+                </div>
                 <?php get_template_part('/template-parts/loop', 'index'); ?>
 
                 <?php
@@ -21,12 +22,11 @@ get_header();
                 if ($wp_query->max_num_pages > 1)
                 echo '<div class="btn-sample levy52_loadmore"><span class="load">' . __('Loading', 'levy52') . '</span><span class="more">' . __('More posts', 'levy52') . '</span></div>';
                 ?>
-
             </div>
         </div>
         <?php get_sidebar('sidebar'); ?>
-    </div> 
-</div> 
+    </div>
+</div>
 
 <?php
 get_footer();

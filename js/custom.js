@@ -5,4 +5,6 @@ function showNavigation() {
 }
 
 navbarToggler.addEventListener('click', showNavigation)
-closeButton.addEventListener('click', () => document.getElementById('navbarSupportedContent').classList.remove('show-nav'))
+closeButton.addEventListener('click', () =>
+	document.getElementById('navbarSupportedContent').classList.remove('show-nav')
+)

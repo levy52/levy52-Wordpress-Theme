@@ -1,7 +1,7 @@
 <?php
 
 function levy52_scripts()
-{ 
+{
   wp_enqueue_style('bootstrap_css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
   wp_enqueue_style('levy52_style', get_stylesheet_uri());
   wp_enqueue_script('jquery');
@@ -134,8 +134,8 @@ function levy52_my_load_more_scripts()
 
   wp_register_script('my_loadmore', get_stylesheet_directory_uri() . '/js/myloadmore.js', array('jquery'));
   wp_localize_script('my_loadmore', 'levy52_loadmore_params', array(
-    'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', 
-    'posts' => json_encode($wp_query->query_vars), 
+    'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php',
+    'posts' => json_encode($wp_query->query_vars),
     'current_page' => get_query_var('paged') ? get_query_var('paged') : 1,
     'max_page' => $wp_query->max_num_pages
   ));
@@ -148,18 +148,18 @@ add_action('wp_enqueue_scripts', 'levy52_my_load_more_scripts');
 function levy52_loadmore_ajax_handler()
 {
 
-  
+
   $args = json_decode(stripslashes($_POST['query']), true);
-  $args['paged'] = $_POST['page'] + 1; 
+  $args['paged'] = $_POST['page'] + 1;
   $args['post_status'] = 'publish';
 
   query_posts($args);
   get_template_part('/template-parts/loop', 'index');
-  die; 
+  die;
 }
 
-add_action('wp_ajax_loadmore', 'levy52_loadmore_ajax_handler'); 
-add_action('wp_ajax_nopriv_loadmore', 'levy52_loadmore_ajax_handler'); 
+add_action('wp_ajax_loadmore', 'levy52_loadmore_ajax_handler');
+add_action('wp_ajax_nopriv_loadmore', 'levy52_loadmore_ajax_handler');
 
 function my_scripts_method()
 {
@@ -197,76 +197,78 @@ function wpb_posts_nav()
 
   if ($next_post || $prev_post) : ?>
 
-    <div class="row wpb-posts-nav">
-      <div class="col-12 col-lg-6 mb-4 mt-4">
+<div class="row wpb-posts-nav">
+    <div class="col-12 col-lg-6 mb-4 mt-4">
         <?php if (!empty($prev_post)) : ?>
-          <a href="<?php echo get_permalink($prev_post); ?>">
+        <a href="<?php echo get_permalink($prev_post); ?>">
             <div>
-              <div class="wpb-posts-nav__thumbnail wpb-posts-nav__prev">
-                <?php echo get_the_post_thumbnail($prev_post, [80, 80]); ?>
-              </div>
+                <div class="wpb-posts-nav__thumbnail wpb-posts-nav__prev">
+                    <?php echo get_the_post_thumbnail($prev_post, [80, 80]); ?>
+                </div>
             </div>
             <div>
-              <strong>
-                <?php _e('Previous article', 'levy52') ?>
-              </strong>
-              <h6><?php echo get_the_title($prev_post); ?></h6>
+                <strong>
+                    <?php _e('Previous article', 'levy52') ?>
+                </strong>
+                <h6><?php echo get_the_title($prev_post); ?></h6>
             </div>
-          </a>
+        </a>
         <?php endif; ?>
-      </div>
-      <div class="col-12 col-lg-6 d-flex flex-nowrap justify-content-lg-end mb-4 mt-lg-4">
+    </div>
+    <div class="col-12 col-lg-6 d-flex flex-nowrap justify-content-lg-end mb-4 mt-lg-4">
         <?php if (!empty($next_post)) : ?>
-          <a href="<?php echo get_permalink($next_post); ?>">
+        <a href="<?php echo get_permalink($next_post); ?>">
             <div class="order-2 order-lg-1">
-              <strong>
-                <?php _e('Next article', 'levy52') ?>
-              </strong>
-              <h6><?php echo get_the_title($next_post); ?></h6>
+                <strong>
+                    <?php _e('Next article', 'levy52') ?>
+                </strong>
+                <h6><?php echo get_the_title($next_post); ?></h6>
             </div>
             <div class="order-1 order-lg-2">
-              <div class="wpb-posts-nav__thumbnail wpb-posts-nav__next">
-                <?php echo get_the_post_thumbnail($next_post, [80, 80]); ?>
-              </div>
+                <div class="wpb-posts-nav__thumbnail wpb-posts-nav__next">
+                    <?php echo get_the_post_thumbnail($next_post, [80, 80]); ?>
+                </div>
             </div>
-          </a>
+        </a>
         <?php endif; ?>
-      </div>
     </div>
+</div>
 
 <?php endif;
 }
 
-add_theme_support( 'responsive-embeds' );
+add_theme_support('responsive-embeds');
 
 add_action('wp_print_scripts', function () {
-	global $post;
-	if ( is_a( $post, 'WP_Post' ) && !has_shortcode( $post->post_content, 'contact-form-7') ) {
-		wp_dequeue_script( 'google-recaptcha' );
-		wp_dequeue_script( 'wpcf7-recaptcha' );
-	}
+  global $post;
+  if (is_a($post, 'WP_Post') && !has_shortcode($post->post_content, 'contact-form-7')) {
+    wp_dequeue_script('google-recaptcha');
+    wp_dequeue_script('wpcf7-recaptcha');
+  }
 });
 
-add_filter( 'wp_title', 'wpdocs_hack_wp_title_for_home' );
-function wpdocs_hack_wp_title_for_home( $title )
+add_filter('wp_title', 'wpdocs_hack_wp_title_for_home');
+function wpdocs_hack_wp_title_for_home($title)
 {
-  if ( empty( $title ) && ( is_home() || is_front_page() ) ) {
-    $title = __( 'Home', 'levy52' ) . '' . get_bloginfo( 'description' );
+  if (empty($title) && (is_home() || is_front_page())) {
+    $title = __('Home', 'levy52') . '' . get_bloginfo('description');
   }
   return $title;
 }
 
-add_theme_support( 'yoast-seo-breadcrumbs' );
+add_theme_support('yoast-seo-breadcrumbs');
 
-add_filter( 'get_the_excerpt', 'wpse_367505_excerpt' );
-function wpse_367505_excerpt( $excerpt ) {
-    return substr( $excerpt, 0, 150 ) . '..';
+add_filter('get_the_excerpt', 'wpse_367505_excerpt');
+function wpse_367505_excerpt($excerpt)
+{
+  return substr($excerpt, 0, 150) . '..';
 }
 
-function SearchFilter($query) {
-    if ($query->is_search) {
-        $query->set('post_type', 'post');
-    }
-    return $query;
+function SearchFilter($query)
+{
+  if ($query->is_search) {
+    $query->set('post_type', 'post');
+  }
+  return $query;
 }
-add_filter('pre_get_posts','SearchFilter');
+add_filter('pre_get_posts', 'SearchFilter');

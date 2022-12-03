@@ -12,27 +12,27 @@ if (post_password_required()) {
 
 <div id="comments" class="col-12 pt-4 comments-area">
 
-	<?php
+    <?php
 	if (have_comments()) : ?>
-		<h2 class="comments-title"><?php _e('Comments', 'levy52'); ?></h2>
+    <h2 class="comments-title"><?php _e('Comments', 'levy52'); ?></h2>
 
-		<?php the_comments_navigation(); ?>
+    <?php the_comments_navigation(); ?>
 
-		<ul class="comment-list">
-			<?php
+    <ul class="comment-list">
+        <?php
 			wp_list_comments(array(
 				'short_ping' => true,
 			));
 			?>
-		</ul>
+    </ul>
 
-		<?php
+    <?php
 		the_comments_navigation();
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if (!comments_open()) : ?>
-			<p class="no-comments"><?php _e('Comments are closed', 'levy52'); ?></p>
-	<?php
+    <p class="no-comments"><?php _e('Comments are closed', 'levy52'); ?></p>
+    <?php
 		endif;
 
 	endif;
@@ -49,7 +49,7 @@ if (post_password_required()) {
 	 	'class_submit' => 'btn-sample',
 	); ?>
 
-	<?php comment_form($comments_args);
+    <?php comment_form($comments_args);
 	?>
 
 </div>

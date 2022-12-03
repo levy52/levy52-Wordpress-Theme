@@ -15,7 +15,7 @@ get_header();
             <h2 class="mt-5">Zapoznaj się z..</h2>
             <?php get_template_part('/template-parts/custom-loop2'); ?>
         </div><?php get_sidebar('sidebar'); ?>
-    </div>  
+    </div>
 </div>
 </div>
 

@@ -9,7 +9,7 @@
 
         <div class="sidebar-border mt-3 mb-3"><?php _e('Latest Comments', 'levy52'); ?></div>
         <?php if (is_active_sidebar('sidebar')) : ?>
-            <?php dynamic_sidebar('sidebar'); ?>
+        <?php dynamic_sidebar('sidebar'); ?>
         <?php endif; ?>
 
         <div class="sidebar-border mt-3 mb-2"><?php _e('Newsletter', 'levy52'); ?></div>
