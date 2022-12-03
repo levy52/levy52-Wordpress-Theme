@@ -4,7 +4,6 @@ if (have_posts()) :
         ?>
         <div class="post_article col-md-6">
             <div class="post_article_content">
-                <h1 class="post_article_title fs-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <div class="post_article_img">
                     <a href="<?php the_permalink(); ?>">
                         <?php if (has_post_thumbnail()) {
@@ -16,6 +15,7 @@ if (have_posts()) :
                         <span class="post-date"><?php echo get_the_date(); ?></span>
                     </a>
                 </div>
+                <h3 class="post_article_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
                 <ul class="post_article_info">
                     <li>

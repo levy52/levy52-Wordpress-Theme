@@ -6,12 +6,9 @@ get_header();
     <div class="row">
         <div class="col-12 col-md-8 col-xxl-9">
             <div class="row">
-            
-               
-                    <header class="page-header">
+                    <div class="page-header">
                         <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'levy52'), get_search_query()); ?></h1>
-                    </header>
-
+                    </div>
                 <?php get_template_part('/template-parts/loop', 'index'); ?>
 
                 <?php

@@ -7,7 +7,6 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'pub
         <?php while ($blog_posts->have_posts()) : $blog_posts->the_post(); ?>
             <div class="post_article col-md-6">
                 <div class="post_article_content">
-                    <h1 class="post_article_title fs-4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                     <div class="post_article_img"><a href="<?php the_permalink(); ?>"><?php if (has_post_thumbnail()) {
                                                                                             echo the_post_thumbnail('thumbnail',['class' => 'post-cover', 'loading' => false]);
                                                                                         } else {
@@ -17,7 +16,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'pub
                             <span class="post-date"><?php echo get_the_date(); ?></span>
                         </a>
                     </div>
-
+                    <h3 class="post_article_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>                                                                 
                     <ul class="post_article_info">
                         <li>
                             <?php

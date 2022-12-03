@@ -49,11 +49,11 @@
             <div class="search-icon order-1"><a href="#search" title="<?php _e('Search', 'levy52')?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/search-icon.png" alt="Search icon"/></a></div>
         </div>
     </nav>
-    <div id="search">
+    <div id="search" class="search">
         <div class="close">x</div>
         <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo("url"); ?>">
-            <?php echo '<h3>' . __('Get set..', 'levy52') . '</h3>'; ?>
+            <?php echo '<h5>' . __('Get set..', 'levy52') . '</h5>'; ?>
             <input type="search" value="" name="s" id="s" placeholder="<?php _e('type keyword(s) here', 'levy52'); ?>" aria-label="Search">
-            <button type="submit" class="btn-sample mt-4" id="searchsubmit"><?php _e('Go for search', 'levy52') ?> </button>
+            <button type="submit" class="btn-sample mt-4 m-auto" id="searchsubmit"><?php _e('Go for search', 'levy52') ?> </button>
         </form>
     </div>

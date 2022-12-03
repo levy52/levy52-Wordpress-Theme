@@ -8,7 +8,7 @@ get_header();
         <div class="row">
             <div class="col">
                 <span class="err404">404</span>
-                <?php echo '<h1>' . __('Page not found', 'levy52') . '</h1>'; ?>
+                <?php echo '<h3>' . __('Page not found', 'levy52') . '</h3>'; ?>
                 <?php echo '<p>' . __('The page you were looking for could not be found. It may have been deleted, renamed or never existed at all.', 'levy52') . '</p>'; ?>
                 <?php echo '<p>' . __('Please try to search for something else', 'levy52') . '</p>'; ?>
                 
