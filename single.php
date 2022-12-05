@@ -28,7 +28,7 @@ get_header();
                     <a href="#comments"><?php echo get_comments_number(); ?></a></span>
             </span>
 
-            <h1 class="post_article_title fs-3 mt-3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+            <h1 class="post_article_title mt-3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             <div class="post_article_img"><?php echo the_post_thumbnail('full', array('class' => 'post-cover')); ?>
             </div>
             <div class="text_post"><?php the_content(); ?></div>

@@ -44,6 +44,14 @@ body {
 	margin: auto;
 }
 
+p {
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
 .rich-black {
 	background-color: #060606;
 }
@@ -289,7 +297,8 @@ ul {
 }
 
 .cat-item a {
-	padding: 2em 10em;
+	padding: 5em 10em;
+	line-height: 4rem;
 	display: block;
 	background-clip: content-box;
 	color: #fff;
@@ -595,6 +604,7 @@ li .comment-meta {
 		background-color: #060606;
 		margin-top: 10px;
 		color: rgba(255, 255, 255, 0.55);
+		font-size: 1.3rem;
 	}
 
 	.dropdown-item:hover {
@@ -676,7 +686,7 @@ li .comment-meta {
 	}
 
 	.primary-menu .nav-link {
-		font-size: 1.3rem;
+		font-size: 2rem;
 	}
 
 	.closebtn:hover {
@@ -691,5 +701,9 @@ li .comment-meta {
 
 	.comment-respond {
 		width: 100%;
+	}
+
+	.dropdown-item {
+		font-size: 1.6rem;
 	}
 }
