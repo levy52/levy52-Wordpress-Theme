@@ -16,7 +16,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'pub
                     <span class="post-date"><?php echo get_the_date(); ?></span>
                 </a>
             </div>
-            <h3 class="post_article_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <h2 class="post_article_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <ul class="post_article_info">
                 <li>
                     <?php

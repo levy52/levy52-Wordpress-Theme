@@ -15,7 +15,7 @@ if (have_posts()) :
                 <span class="post-date"><?php echo get_the_date(); ?></span>
             </a>
         </div>
-        <h3 class="post_article_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <h2 class="post_article_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <ul class="post_article_info">
             <li>

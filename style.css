@@ -594,6 +594,10 @@ li .comment-meta {
 	display: none;
 }
 
+.text_post ul {
+	list-style: inside;
+}
+
 @media (min-width: 992px) {
 	.center-menu ul li {
 		margin: 10px;
