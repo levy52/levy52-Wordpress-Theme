@@ -33,7 +33,7 @@ $blog_posts = new WP_Query(array('post_type' => 'post', 'post_status’' => 'pub
                     <?php endif; ?>
                     <?php
                                 foreach ($categories as $category) {
-                                    $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'levy52'), $category->name)) . '">' . esc_html($category->name) . '</a>' . $separator;
+                                    $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" title="' . esc_attr(sprintf(__('View all posts in %s', 'levy52'), $category->name)) . '">' . esc_html($category->name) . '</a>' . $separator;
                                 }
                                 echo trim($output, $separator);
                                 ?>

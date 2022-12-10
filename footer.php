@@ -14,22 +14,22 @@
 
 <footer class="text-center text-lg-start rich-black">
 
-    <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
+    <div class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
         <div class="container socialmedia"><?php dynamic_sidebar("socialmedia"); ?></div>
-    </section>
+    </div>
 
-    <section class="rich-black">
+    <div class="rich-black">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4 text-secondary">
+                    <h6 class="text-uppercase fs-3 fw-bold mb-4 text-secondary"></h6>
                         <div class="logo">
                             <?php the_custom_logo(); ?>
                         </div>
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-2 text-secondary">
+                    <h6 class="text-uppercase fs-3 fw-bold mb-2 text-secondary">
                         <?php _e('Category', 'levy52'); ?>
                     </h6>
                     <nav
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-2 text-secondary">
+                    <h6 class="text-uppercase fs-3 fw-bold mb-2 text-secondary">
                         <?php _e('Menu', 'levy52'); ?>
                     </h6>
 
@@ -74,14 +74,14 @@
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase fw-bold mb-3 text-secondary">
+                    <h6 class="text-uppercase fs-3 fw-bold mb-3 text-secondary">
                         <?php _e('Contact', 'levy52'); ?>
                     </h6>
                     <?php dynamic_sidebar("contact"); ?>
                 </div>
             </div>
         </div>
-    </section>
+        </div>
 
 
     <div class="text-center p-4">

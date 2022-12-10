@@ -121,7 +121,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 
 			if ( false !== strpos( $args->items_wrap, 'itemscope' ) && false === $this->has_schema ) {
 				$this->has_schema  = true;
-				$args->link_before = '<span itemprop="name">' . $args->link_before;
+				$args->link_before = '<span>' . $args->link_before;
 				$args->link_after .= '</span>';
 			}
 
@@ -218,10 +218,6 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 				$atts['class']         = 'dropdown-toggle nav-link';
 				$atts['id']            = 'menu-item-dropdown-' . $item->ID;
 			} else {
-				if ( true === $this->has_schema ) {
-					$atts['itemprop'] = 'url';
-				}
-
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '#';
 				// For items in dropdowns use .dropdown-item instead of .nav-link.
 				if ( $depth > 0 ) {
