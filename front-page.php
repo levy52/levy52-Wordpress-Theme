@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<div class="home-slider container">
+<div class="home-slider container-fluid">
 <?php get_template_part('/template-parts/home-slider-loop'); ?>
 </div>
 

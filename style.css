@@ -178,6 +178,10 @@ ul {
 	opacity: 0.7;
 }
 
+.home-slider .post-cover {
+	object-fit: fill;
+}
+
 .home-slider-post-article {
 	padding: 0 1rem;
 }
@@ -433,6 +437,10 @@ li .comment-meta {
 	position: relative;
 }
 
+.home-slider .slick-dots {
+	position: revert;
+}
+
 .one-time .slick-prev {
 	left: 0.5px;
 }
@@ -660,6 +668,10 @@ li .comment-meta {
 
 	.navbar .nav-item .dropdown-menu {
 		margin-top: 0;
+	}
+
+	.home-slider {
+		overflow: hidden;
 	}
 
 	.home-slider .slick-slide img {
