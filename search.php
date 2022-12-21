@@ -10,22 +10,25 @@ get_header();
                     <h1 class="page-title">
                         <?php printf(esc_html__('Search Results for: %s', 'levy52'), get_search_query()); ?></h1>
                 </div>
+                <hr>
                 <?php get_template_part('/template-parts/loop', 'index'); ?>
 
                 <?php
                 the_posts_pagination();
                 ?>
-
-                <?php // LOAD MORE BUTTON 
+                <?php
                 global $wp_query;
-                // don't display the button if there are not enough posts
                 if ($wp_query->max_num_pages > 1)
-                echo '<div class="btn-sample levy52_loadmore"><span class="load">' . __('Loading', 'levy52') . '</span><span class="more">' . __('More posts', 'levy52') . '</span></div>';
+                    echo '<div class="btn-sample levy52_loadmore"><span class="load">' . __('Loading', 'levy52') . '</span><span class="more">' . __('More posts', 'levy52') . '</span></div>';
                 ?>
             </div>
+            <hr>
+            <h2 class="mt-5">Może to Cię zainteresuje?</h2>
+            <?php get_template_part('/template-parts/custom-loop'); ?>
         </div>
         <?php get_sidebar('sidebar'); ?>
     </div>
+
 </div>
 
 <?php

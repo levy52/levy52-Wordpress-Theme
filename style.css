@@ -615,7 +615,8 @@ li .comment-meta {
 }
 
 .home-slider {
-	min-height: 230px;
+	overflow: hidden;
+	min-height: 300px;
 }
 
 .home-slider > div {
@@ -689,20 +690,8 @@ li .comment-meta {
 		margin-top: 0;
 	}
 
-	.home-slider {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
-	}
-
 	.home-slider .slick-slide img {
 		height: 300px;
-	}
-
-	.home-slider {
-		min-height: 330px;
 	}
 }
 
@@ -774,10 +763,6 @@ li .comment-meta {
 
 @media (min-width: 1400px) {
 	.home-slider .slick-slide img {
-		height: 500px;
-	}
-
-	.home-slider {
-		min-height: 580px;
+		height: 400px;
 	}
 }
