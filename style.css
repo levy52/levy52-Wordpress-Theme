@@ -44,14 +44,6 @@ body {
 	margin: auto;
 }
 
-p {
-	font-size: 1.6rem;
-}
-
-h1 {
-	font-size: 2.5rem;
-}
-
 .rich-black {
 	background-color: #060606;
 }
@@ -605,6 +597,11 @@ li .comment-meta {
 	display: none;
 }
 
+.text_post h2 {
+	margin: 2rem 0 1rem 0;
+	font-size: 2.4rem;
+}
+
 .text_post ul {
 	list-style: inside;
 }
@@ -663,6 +660,10 @@ li .comment-meta {
 
 	.navbar .nav-item .dropdown-menu {
 		margin-top: 0;
+	}
+
+	.home-slider .slick-slide img {
+		height: 300px;
 	}
 }
 
@@ -724,6 +725,16 @@ li .comment-meta {
 
 	.post-date {
 		opacity: 1;
+	}
+
+	.home-slider-post-date {
+		opacity: 1;
 		height: 50%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.home-slider .slick-slide img {
+		height: 500px;
 	}
 }
