@@ -23,4 +23,43 @@ jQuery(document).ready(function ($) {
 			},
 		],
 	})
+
+	$('.home-slider').slick({
+		infinite: false,
+		arrows: false,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		mobileFirst: true,
+		dots: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 1399,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				},
+			},
+		],
+	})
 })

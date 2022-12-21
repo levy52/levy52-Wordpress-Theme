@@ -2,10 +2,8 @@
 get_header();
 ?>
 
-<div class="container-fluid gx-0">
-    <?php
-    echo do_shortcode('[smartslider3 slider="2"]');
-    ?>
+<div class="home-slider container">
+<?php get_template_part('/template-parts/home-slider-loop'); ?>
 </div>
 
 <div class="container mb-4 mt-5 text-color">
