@@ -1,5 +1,5 @@
 <?php
-$blog_posts = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'category_name' => 'garaz,golf-3,golf-iv,passat-b5,corsa-d', 'posts_per_page' => 4));
+$blog_posts = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'category_name' => 'garaz,golf-3,golf-iv,passat-b5,corsa-d', 'posts_per_page' => 8));
 ?>
 <div class="row">
     <div class="one-time col-12 mt-3">
