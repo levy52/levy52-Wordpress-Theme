@@ -24,7 +24,14 @@
     <nav class="navbar navbar-dark navbar-expand-lg text-secondary border-bottom sticky-top rich-black">
         <div class="container position-relative">
             <div class="logo">
-                <?php the_custom_logo(); ?>
+            <?php
+            $logo = get_field('logo', 40); 
+            $logo_hover = get_field('logo_hover', 40);
+            ?>
+            <img src="<?php echo $logo ?>" class="logo">
+            <img src="<?php echo $logo_hover ?>" class="logo-hover">
+            <a href="<?php echo home_url(); ?>" class="logo-link"></a>
+
             </div>
             <button id="navbar-toggler" class="navbar-toggler ms-auto" type="button" aria-label="Navbar Toggler">
                 <span class="navbar-toggler-icon"></span>
